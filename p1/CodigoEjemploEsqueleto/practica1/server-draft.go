@@ -6,7 +6,7 @@
 * FICHERO: server.go
 * DESCRIPCIÓN: contiene la funcionalidad esencial para realizar los servidores
 *				correspondientes a la práctica 1
-*/
+ */
 package main
 
 import (
@@ -14,8 +14,9 @@ import (
 	"fmt"
 	"net"
 	"os"
+
 	//"io"
-	"practica1/com"	
+	"practica1/com"
 )
 
 func checkError(err error) {
@@ -37,7 +38,8 @@ func IsPrime(n int) (foundDivisor bool) {
 
 // PRE: interval.A < interval.B
 // POST: FindPrimes devuelve todos los números primos comprendidos en el
-// 		intervalo [interval.A, interval.B]
+//
+//	intervalo [interval.A, interval.B]
 func FindPrimes(interval com.TPInterval) (primes []int) {
 	for i := interval.A; i <= interval.B; i++ {
 		if IsPrime(i) {
@@ -48,34 +50,35 @@ func FindPrimes(interval com.TPInterval) (primes []int) {
 }
 
 func main() {
-	CONN_HOST, CONN_PORT := os.Args[1], os.Args[2] //pasar argumentos al hacer el go run, por lo demás todo guay
-	listener, err := net.Listen("tcp", CONN_HOST+":"+CONN_PORT)
+	//CONN_HOST, CONN_PORT := os.Args[1], os.Args[2] //pasar argumentos al hacer el go run, por lo demás todo guay
+	//listener, err := net.Listen("tcp", CONN_HOST+":"+CONN_PORT)
+	listener, err := net.Listen("tcp", "127.0.0.1:30003")
 	checkError(err)
 
 	for {
 		conn, err := listener.Accept() //acepta a un cliente
-		defer conn.Close() //cerramos canal pq defer se ejecuta al final del uso
+		defer conn.Close()             //cerramos canal pq defer se ejecuta al final del uso
 		checkError(err)
 
 		// conn guarda la información de la conexión con el cliente
-		// decode sera el receptor del mensaje 
+		// decode sera el receptor del mensaje
 		decoder := gob.NewDecoder(conn)
-		// decode sera el emisor del mensaje 
+		// decode sera el emisor del mensaje
 		encoder := gob.NewEncoder(conn)
-		// creamos una variable para almacenar el mensaje 
-		var request com.Request 
+		// creamos una variable para almacenar el mensaje
+		var request com.Request
 		//recibir id e intervalo de elementos del cliente con el que se establece la conexión
-		err = decoder.Decode(request)
+		err = decoder.Decode(&request)
 		checkError(err)
 		//una vez recibido encontrar primos en el intervalor con FindPrimes
-		var primes []int
-		primes = FindPrimes(request.Interval)
+		var reply com.Reply
+		reply.Primes = FindPrimes(request.Interval)
+		reply.Id = request.Id
 		//enviar al cliente los numeros primos
-		err = encoder.Encode(primes)
+		err = encoder.Encode(reply)
 		checkError(err)
-		// cerramos la conexión con el cliente 
-		//conn.Close() 
+		// cerramos la conexión con el cliente
+		//conn.Close()
 	}
-	
-}
 
+}
