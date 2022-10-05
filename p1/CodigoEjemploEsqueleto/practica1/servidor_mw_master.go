@@ -14,8 +14,6 @@
 	 "fmt"
 	 "net"
 	 "os"
-	 "sync"
-	 //"io"
 	 "practica1/com"
  )
  
@@ -52,20 +50,23 @@
  //gorutina
  func peticionesClientes(envioPeticiones chan net.Conn, workerIp string){
 	//establecer conexión con el worker
+	fmt.Println("conexión con worker")
 	tcpAddr, err := net.ResolveTCPAddr("tcp", workerIp)
 	checkError(err)
-
+	fmt.Println("conexión con worker a medio camino")
 	conn, err := net.DialTCP("tcp", nil, tcpAddr)
 	checkError(err)
+	fmt.Println("conexión con worker establecida")
 
 	encoderW := gob.NewEncoder(conn)
 	// recibimos respuesta workers
 	decoderW := gob.NewDecoder(conn)
 	var request com.Request
-	var reply com.Replay
+	var reply com.Reply
 
 	for connClientes := range envioPeticiones {
 		 encoderC := gob.NewEncoder(connClientes)
+		 decoderC := gob.NewDecoder(connClientes)
 		 // recibimimos la peticion de los clientes
 		 decoderC.Decode(&request)
 		 // enviamos la peticion a los workers 
@@ -88,7 +89,7 @@
 	 //vector de ip:puerto de los workers
 	 //var datosWorker[2] string {"155.210.154.201:30001", "155.210.154.202:30002"}
 	 // probatina en local
-	 var datosWorker[2] string {"127.0.0.1:30001", "127.0.0.1:30002"}
+	 datosWorker := [2]string{"127.0.0.1:30001", "127.0.0.1:30005"}
 	 
 	 for i := 0; i < 2; i++{
 		go peticionesClientes(envioPeticiones, datosWorker[i])
