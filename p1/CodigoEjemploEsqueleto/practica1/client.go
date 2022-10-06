@@ -84,7 +84,7 @@ func receiveReply(decoder *gob.Decoder, delChan chan com.TimeReply, conn net.Con
 }
 
 func main() {
-	endpoint := "127.0.0.1:30003"
+	endpoint := "127.0.0.1:30049"
 	numIt := 10
 	requestTmp := 6
 	interval := com.TPInterval{1000, 70000}

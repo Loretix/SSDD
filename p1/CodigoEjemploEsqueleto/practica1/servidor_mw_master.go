@@ -82,14 +82,14 @@
  func main() {
 	 //CONN_HOST, CONN_PORT := os.Args[1], os.Args[2] //pasar argumentos al hacer el go run, por lo demás todo guay
 	 //listener, err := net.Listen("tcp", CONN_HOST+":"+CONN_PORT)
-	 listener, err := net.Listen("tcp", "127.0.0.1:30003")
+	 listener, err := net.Listen("tcp", "127.0.0.1:30049")
 	 checkError(err)
 	 //creación de canales 
 	 envioPeticiones := make (chan net.Conn) 
 	 //vector de ip:puerto de los workers
-	 //var datosWorker[2] string {"155.210.154.201:30001", "155.210.154.202:30002"}
+	 datosWorker := [2]string{"155.210.154.201:30098", "155.210.154.208:30098"}
 	 // probatina en local
-	 datosWorker := [2]string{"127.0.0.1:30001", "127.0.0.1:30005"}
+	 //datosWorker := [2]string{"127.0.0.1:30098", "127.0.0.1:30005"}
 	 
 	 for i := 0; i < 2; i++{
 		go peticionesClientes(envioPeticiones, datosWorker[i])
