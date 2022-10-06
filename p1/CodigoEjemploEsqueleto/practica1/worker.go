@@ -68,7 +68,7 @@
 	 var reply com.Reply
 	 reply.Primes = FindPrimes(request.Interval)
 	 reply.Id = request.Id
-	 fmt.Sprintf("Enviar respuesta al master: %d con primios ", reply.Id)
+	 fmt.Sprintf("Enviar respuesta al master: %d con primos ", reply.Id)
 	 for primo := range reply.Primes{
 		fmt.Sprintf(" %d ,", primo  )
 	 }
