@@ -50,6 +50,7 @@ func FindPrimes(interval com.TPInterval) (primes []int) {
 }
 
 func main() {
+
 	//CONN_HOST, CONN_PORT := os.Args[1], os.Args[2] //pasar argumentos al hacer el go run, por lo demás todo guay
 	//listener, err := net.Listen("tcp", CONN_HOST+":"+CONN_PORT)
 	listener, err := net.Listen("tcp", "127.0.0.1:30003")

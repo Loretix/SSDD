@@ -92,7 +92,7 @@ func peticionesClientes(envioPeticiones chan net.Conn, workerIp string) {
 func main() {
 	//CONN_HOST, CONN_PORT := os.Args[1], os.Args[2] //pasar argumentos al hacer el go run, por lo demás todo guay
 	//listener, err := net.Listen("tcp", CONN_HOST+":"+CONN_PORT)
-	listener, err := net.Listen("tcp", "127.0.0.1:30050")
+	listener, err := net.Listen("tcp", "127.0.0.1:30003")
 	checkError(err)
 	//creación de canales
 	envioPeticiones := make(chan net.Conn)
