@@ -97,7 +97,7 @@ func main() {
 	//creación de canales
 	envioPeticiones := make(chan net.Conn)
 	//vector de ip:puerto de los workers
-	datosWorker := [2]string{"127.0.0.1:30080", "127.0.0.1:30081"}
+	datosWorker := [2]string{"127.0.0.1:30091", "127.0.0.1:30092"}
 
 	for i := 0; i < 2; i++ {
 		go peticionesClientes(envioPeticiones, datosWorker[i])

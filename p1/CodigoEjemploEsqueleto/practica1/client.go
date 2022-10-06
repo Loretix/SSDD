@@ -13,6 +13,7 @@ import (
 	"fmt"
 	"net"
 	"os"
+	"sync"
 	"practica1/com"
 	"time"
 )
@@ -31,7 +32,7 @@ func checkError(err error) {
 // temporal. Para evitar condiciones de carrera, la estructura de datos compartida se almacena en una Goroutine
 // (handleRequests) y que controla los accesos a través de canales síncronos. En este caso, se añade una nueva
 // petición a la estructura de datos mediante el canal addChan
-func sendRequest(endpoint string, id int, interval com.TPInterval, addChan chan com.TimeRequest, delChan chan com.TimeReply) {
+func sendRequest(endpoint string, id int, interval com.TPInterval, addChan chan com.TimeRequest, delChan chan com.TimeReply, wg *sync.WaitGroup) {
 	tcpAddr, err := net.ResolveTCPAddr("tcp", endpoint)
 	checkError(err)
 
@@ -45,7 +46,8 @@ func sendRequest(endpoint string, id int, interval com.TPInterval, addChan chan 
 	err = encoder.Encode(request) //envia el request
 	checkError(err)
 	addChan <- timeReq
-	go receiveReply(decoder, delChan, conn)
+	wg.Add(1)
+	go receiveReply(decoder, delChan, conn, wg)
 }
 
 // handleRequests es una Goroutine que garantiza el acceso en exclusión mutua a la tabla de peticiones. La tabla de peticiones
@@ -74,12 +76,13 @@ func handleRequests(addChan chan com.TimeRequest, delChan chan com.TimeReply) {
 // temporal. Para evitar condiciones de carrera, la estructura de datos compartida se almacena en una Goroutine
 // (handleRequests) y que controla los accesos a través de canales síncronos. En este caso, se añade una nueva
 // petición a la estructura de datos mediante el canal addChan
-func receiveReply(decoder *gob.Decoder, delChan chan com.TimeReply, conn net.Conn) {
+func receiveReply(decoder *gob.Decoder, delChan chan com.TimeReply, conn net.Conn, wg *sync.WaitGroup) {
 	var reply com.Reply
 	err := decoder.Decode(&reply)
 	checkError(err)
 	timeReply := com.TimeReply{reply.Id, time.Now()}
 	delChan <- timeReply
+	wg.Done()
 	conn.Close()
 }
 
@@ -93,12 +96,14 @@ func main() {
 	addChan := make(chan com.TimeRequest)
 	delChan := make(chan com.TimeReply)
 
+	var wg sync.WaitGroup
 	go handleRequests(addChan, delChan)
 
 	for i := 0; i < numIt; i++ {
 		for t := 1; t <= requestTmp; t++ {
-			sendRequest(endpoint, i*requestTmp+t, interval, addChan, delChan)
+			sendRequest(endpoint, i*requestTmp+t, interval, addChan, delChan, &wg)
 		}
 		time.Sleep(time.Duration(tts) * time.Millisecond)
 	}
+	wg.Wait()
 }
