@@ -63,10 +63,15 @@
 	 //recibir id e intervalo de elementos del cliente con el que se establece la conexión
 	 err := decoder.Decode(&request)
 	 checkError(err)
+	 fmt.Sprintf("Recibir peticion del cliente mediante el master: %d e intervalo: %d , %d ", request.Id, request.Interval.A, request.Interval.B)
 	 //una vez recibido encontrar primos en el intervalor con FindPrimes
 	 var reply com.Reply
 	 reply.Primes = FindPrimes(request.Interval)
 	 reply.Id = request.Id
+	 fmt.Sprintf("Enviar respuesta al master: %d con primios ", reply.Id)
+	 for primo := range reply.Primes{
+		fmt.Sprintf(" %d ,", primo  )
+	 }
 	 //enviar al cliente los numeros primos
 	 err = encoder.Encode(reply)
 	 checkError(err)

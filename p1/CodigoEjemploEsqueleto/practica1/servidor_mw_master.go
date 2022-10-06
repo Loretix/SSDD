@@ -53,7 +53,6 @@
 	fmt.Println("conexión con worker")
 	tcpAddr, err := net.ResolveTCPAddr("tcp", workerIp)
 	checkError(err)
-	fmt.Println("conexión con worker a medio camino")
 	conn, err := net.DialTCP("tcp", nil, tcpAddr)
 	checkError(err)
 	fmt.Println("conexión con worker establecida")
@@ -69,10 +68,13 @@
 		 decoderC := gob.NewDecoder(connClientes)
 		 // recibimimos la peticion de los clientes
 		 decoderC.Decode(&request)
+	 	 fmt.Sprintf("Recibir peticion del cliente: %d e intervalo: %d , %d ", request.Id, request.Interval.A, request.Interval.B)
 		 // enviamos la peticion a los workers 
 		 encoderW.Encode(request)
+		 fmt.Println("Peticion enviada a los Workers")
 		 // recibimos la respuesta de los workers
 		 decoderW.Decode(&reply)
+		 fmt.Sprintf("Recibir respuesta de los workers: %d", reply.Id)
 		 // enviamos la respuesta de los workers a los clientes
 		 encoderC.Encode(reply)	 
 	}
