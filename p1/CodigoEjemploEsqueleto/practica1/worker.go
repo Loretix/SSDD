@@ -75,13 +75,12 @@ func procesarResultado(conn net.Conn) {
 }
 
 func main() {
-	CONN_HOST, CONN_PORT := os.Args[1], os.Args[2] //pasar argumentos al hacer el go run, por lo demás todo guay
+	CONN_HOST, CONN_PORT := os.Args[1], os.Args[2]
 	listener, err := net.Listen("tcp", CONN_HOST+":"+CONN_PORT)
-	//listener, err := net.Listen("tcp", "127.0.0.1:30003")
 	checkError(err)
 
 	for {
-		conn, err := listener.Accept() //acepta a un cliente
+		conn, err := listener.Accept()
 		checkError(err)
 		procesarResultado(conn)
 	}
