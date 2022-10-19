@@ -9,13 +9,14 @@
 package ra
 
 import (
-    "ms"
+    "practica2/ms"
     "sync"
 )
 
 type Request struct{
     Clock   int
     Pid     int
+    op_t    int // 1 -> escritores 0 -> lectores
 }
 
 type Reply struct{}
@@ -62,7 +63,7 @@ func (ra *RASharedDB) PreProtocol(){
     ra.OutRepCnt = ra.N - 1              // Numero de procesos que confirman la entrada a SC
     for j := 1; j < ra.N; j++ {
         if j != ra.Me {
-            // send (enviamos la peticion de acceso a la SC)
+            // send (enviamos la peticion de acceso a la SC)  ----------------------------------------
         }
 	}
 
@@ -91,3 +92,44 @@ func (ra *RASharedDB) Stop(){
     ra.ms.Stop()
     ra.done <- true
 }
+
+func (ra *RASharedDB) Recibir(){
+    var defer_it bool       
+    
+    for{
+        mensaje = ra.ms.Receive()        // Obtenemos un mensaje del mailbox
+        switch mensaje {			     // variable que define los casos 
+            
+            case mensaje.(Request):      // nos llega un tipo request con su id, y su clock 
+                if (ra.HigSeqNum < mensaje.Clock){
+                    ra.HigSeqNum = mensaje.Clock
+                }
+                ra.Mutex.Lock()
+                defer_it = ReqCS && 
+                ((mensaje.Clock>ra.OurSeqNum)||(mensaje.Clock = ra.OurSeqNum && mensaje.pid>ra.Me)) &&
+                //exclude(op_type,op_t)
+                ra.Mutex.Unlock()
+                if(defer_it){
+                    ra.RepDefd[mensaje.pid] = true  // Entrariamos nosotros en SC por ello j se queda esperando
+                }
+                else{
+                    ra.ms.Send(mensaje.pid, Reply{}) // Enviamos nuestro permiso al proceso j    
+                }
+    
+            case mensaje.(Reply):
+                ra.chrep <- true        // recibimos el permiso de un proceso j, y por ello enviamos
+                                        // true por el canal chrep, el cual estaremos esperando en el
+                                        // preprotocol 
+                
+            default:                    // caso de Log  - goVec
+                
+            }
+    }
+}
+
+
+// faltan: 
+//    recibir logs (goVec)
+//    matriz de exclude 
+//    send de las dos funciones con el tipo de mensaje 
+//    Escritores y Lectores 
