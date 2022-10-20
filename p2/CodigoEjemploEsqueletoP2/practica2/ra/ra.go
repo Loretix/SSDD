@@ -9,7 +9,9 @@
 package ra
 
 import (
+	"fmt"
 	"practica2/ms"
+	"strconv"
 	"sync"
 
 	"github.com/DistributedClocks/GoVector/govec"
@@ -46,11 +48,11 @@ type RASharedDB struct {
 
 func New(me int, N int, op_type int, usersFile string) *RASharedDB {
 	logger := govec.InitGoVector("MyProcess", "LogFile", govec.GetDefaultConfig())
-	messageTypes := []ms.Message{Request{}, Reply{}}
+	messageTypes := []ms.Message{Request{}, Reply{}, GoVect{}}
 	msgs := ms.New(me, usersFile, messageTypes)
 	ra := RASharedDB{0, 0, 0, false, []int{}, &msgs, make(chan bool), make(chan bool), sync.Mutex{}, me, N, op_type, logger}
-	for j := 1; j < N; j++ {
-		ra.RepDefd[j] = 0
+	for j := 0; j <= N; j++ {
+		ra.RepDefd = append(ra.RepDefd, 0)
 	}
 	return &ra
 }
@@ -70,12 +72,13 @@ func (ra *RASharedDB) PreProtocol() {
 	ra.Mutex.Unlock()
 
 	ra.OutRepCnt = ra.N - 1 // Numero de procesos que confirman la entrada a SC
-	for j := 1; j < ra.N; j++ {
+	for j := 1; j <= ra.N; j++ {
 		if j != ra.Me {
+			// Enviamos el reloj vectorial
+			messagePayload := []byte("Request") // Codificamos el mensaje y actualizamos el govec
+			relojVectorial := ra.logger.PrepareSend("Envio peticion acceso SC: "+strconv.Itoa(ra.Me), messagePayload, govec.GetDefaultLogOptions())
+			ra.ms.Send(j, GoVect{relojVectorial})
 			ra.ms.Send(j, Request{ra.OurSeqNum, ra.Me, ra.op_type}) // send (enviamos la peticion de acceso a la SC)
-			messagePayload := []byte("Request")                     // Codificamos el mensaje y actualizamos el govec
-			relojVectorial := ra.logger.PrepareSend("Envio peticion acceso SC", messagePayload, govec.GetDefaultLogOptions())
-			ra.ms.Send(j, GoVect{relojVectorial}) // Enviamos el reloj vectorial
 		}
 	}
 
@@ -94,13 +97,13 @@ func (ra *RASharedDB) PreProtocol() {
 // Enviamos permiso a los procesos que teniamos esperando la confirmacion
 // una vez salimos de nuestra SC
 func (ra *RASharedDB) PostProtocol() {
-	for j := 1; j < ra.N; j++ {
+	for j := 1; j <= ra.N; j++ {
 		if ra.RepDefd[j] == 1 {
-			ra.RepDefd[j] = 0
-			ra.ms.Send(j, Reply{})            // send nuestro permiso para que j entre en SC
 			messagePayload := []byte("Reply") // Codificamos el mensaje y actualizamos el govec
 			relojVectorial := ra.logger.PrepareSend("Envio Reply", messagePayload, govec.GetDefaultLogOptions())
 			ra.ms.Send(j, GoVect{relojVectorial}) // Enviamos el reloj vectorial
+			ra.RepDefd[j] = 0
+			ra.ms.Send(j, Reply{}) // send nuestro permiso para que j entre en SC
 		}
 	}
 }
@@ -112,49 +115,54 @@ func (ra *RASharedDB) Stop() {
 
 func (ra *RASharedDB) Recibir() {
 	var defer_it bool
+	fmt.Println("Inicio de la goRutinas de: " + strconv.Itoa(ra.Me))
 
 	for {
-		mensaje := ra.ms.Receive() // Obtenemos un mensaje del mailbox
-		switch mensaje {           // variable que define los casos
+		mensaje := ra.ms.Receive()      // Obtenemos un mensaje del mailbox
+		switch tipo := mensaje.(type) { // variable que define los casos
+		case GoVect:
+			fmt.Println(strconv.Itoa(ra.Me) + "- Recibido goVec")
+			messagePayload := []byte("GoVect")
+			ra.logger.UnpackReceive("Recibir un reloj vectorial", tipo.puntero, &messagePayload, govec.GetDefaultLogOptions()) // Decodifica el mensaje y actualiza el reloj local con el recibido
+			ra.logger.LogLocalEvent("Recepcion completada GoVec", govec.GetDefaultLogOptions())                                // Log a local event
 
-		case mensaje.(Request): // nos llega un tipo request con su id, y su clock
-			req := mensaje.(Request)
-			if ra.HigSeqNum < req.Clock {
-				ra.HigSeqNum = req.Clock
+		case Request: // nos llega un tipo request con su id, y su clock
+			fmt.Println(strconv.Itoa(ra.Me) + "- Recibido Request")
+			fmt.Println("Request: " + strconv.Itoa(ra.Me) + " from " + strconv.Itoa(tipo.Pid))
+			if ra.HigSeqNum < tipo.Clock {
+				ra.HigSeqNum = tipo.Clock
 			}
 			ra.Mutex.Lock()
 
 			exclude := false
 			if ra.op_type == 1 {
 				exclude = true
-			} else if req.op_t == 1 {
+			} else if tipo.op_t == 1 {
 				exclude = true
 			}
 
 			defer_it = ra.ReqCS &&
-				((req.Clock > ra.OurSeqNum) || (req.Clock == ra.OurSeqNum && req.Pid > ra.Me)) &&
+				((tipo.Clock > ra.OurSeqNum) || (tipo.Clock == ra.OurSeqNum && tipo.Pid > ra.Me)) &&
 				(exclude) //exclude(op_type,op_t)  1 -> escritores 0 -> lectores
 
 			ra.Mutex.Unlock()
 			if defer_it {
-				ra.RepDefd[req.Pid] = 1 // Entrariamos nosotros en SC por ello j se queda esperando
+				ra.RepDefd[tipo.Pid] = 1 // Entrariamos nosotros en SC por ello j se queda esperando
 			} else {
-				ra.ms.Send(req.Pid, Reply{}) // Enviamos nuestro permiso al proceso j
+				messagePayload := []byte("Reply") // Codificamos el mensaje y actualizamos el govec
+				relojVectorial := ra.logger.PrepareSend("Envio Reply", messagePayload, govec.GetDefaultLogOptions())
+				ra.ms.Send(tipo.Pid, GoVect{relojVectorial}) // Enviamos el reloj vectorial
+				ra.ms.Send(tipo.Pid, Reply{})                // Enviamos nuestro permiso al proceso j
+				fmt.Println("Envio de permiso de " + strconv.Itoa(ra.Me) + " a " + strconv.Itoa(tipo.Pid) + " realizado")
+
 			}
 
-		case mensaje.(Reply):
+		default:
+			fmt.Println(strconv.Itoa(ra.Me) + "- Recibido Reply")
 			ra.chrep <- true // recibimos el permiso de un proceso j, y por ello enviamos
 			// true por el canal chrep, el cual estaremos esperando en el
 			// preprotocol
 
-		default: // caso de Log  - goVec
-			gov := mensaje.(GoVect)
-			messagePayload := []byte("GoVect")
-			ra.logger.UnpackReceive("Recibir un reloj vectorial", gov.puntero, &messagePayload, govec.GetDefaultLogOptions()) // Decodifica el mensaje y actualiza el reloj local con el recibido
-			ra.logger.LogLocalEvent("Recepcion completada GoVec", govec.GetDefaultLogOptions())                               // Log a local event
 		}
 	}
 }
-
-// faltan:
-//    Escritores y Lectores
