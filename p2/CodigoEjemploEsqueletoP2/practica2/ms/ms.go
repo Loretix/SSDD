@@ -88,7 +88,7 @@ func New(whoIam int, usersFile string, messageTypes []Message) (ms MessageSystem
 	ms.done = make(chan bool)
 	Register(messageTypes)
 	go func() {
-		listener, err := net.Listen("tcp", ms.peers[ms.me-1])
+		listener, err := net.Listen("tcp", ms.peers[ms.me-1]) //ms.peers contiene algo tipo 155.210.154.201:30001
 		checkError(err)
 		fmt.Println("Process listening at " + ms.peers[ms.me-1])
 		defer close(ms.mbox)
