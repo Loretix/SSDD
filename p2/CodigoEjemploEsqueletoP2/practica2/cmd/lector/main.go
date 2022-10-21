@@ -22,7 +22,7 @@ func main() { // Lector main
 		fmt.Println(strconv.Itoa(me) + "- Empezamos el tratamiento de SC")
 		raLector.PreProtocol() // ejecutamos el preprotocol pq queremos acceder a SC
 		fmt.Println("PreProtocol ejecutado")
-		leido := gestorfichero.LeerFichero() // accedemos a SC (leemos funcion Leer() )
+		leido := gestorfichero.LeerFichero(me) // accedemos a SC (leemos funcion Leer() )
 		fmt.Println("Soy " + strconv.Itoa(me) + " y he leido " + leido)
 		raLector.PostProtocol() // ejecutamos el postprotocolo (salimos de SC)
 

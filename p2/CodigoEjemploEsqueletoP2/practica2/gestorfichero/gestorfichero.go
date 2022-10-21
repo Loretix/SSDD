@@ -3,6 +3,7 @@ package gestorfichero
 import (
 	"fmt"
 	"os"
+	"strconv"
 )
 
 func CheckError(err error) {
@@ -12,17 +13,21 @@ func CheckError(err error) {
 	}
 }
 
-func LeerFichero() string {
+func LeerFichero(me int) string {
 	ruta, err := os.Getwd()
 	CheckError(err)
-	leido, err := os.ReadFile(ruta + "/fichero.txt")
+	leido, err := os.ReadFile(ruta + "/fichero" + strconv.Itoa(me) + ".txt")
 	CheckError(err)
 	datosLeidos := string(leido)
 	return datosLeidos
 }
 
-func EscribirFichero(fragmento string) {
+func EscribirFichero(fragmento string, N int) {
 	ruta, err := os.Getwd() // devuelve la ruta desde la que se ejecuta el programa
 	CheckError(err)
-	os.WriteFile(ruta+"/fichero.txt", []byte(fragmento), 0777)
+	for i := 1; i <= N; i++ {
+		fichero, err := os.OpenFile(ruta+"/fichero"+strconv.Itoa(i)+".txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+		CheckError(err)
+		fichero.WriteString(fragmento)
+	}
 }

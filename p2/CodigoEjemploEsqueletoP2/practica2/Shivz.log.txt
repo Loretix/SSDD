@@ -1,0 +1,150 @@
+(?<host>\S*) (?<clock>{.*})\n(?<event>.*)
+
+
+ {"1":1}
+Initialization Complete
+1 {"1":2}
+INFO Envio Reply
+1 {"1":3}
+INFO Envio peticion acceso SC: 
+1 {"1":4}
+INFO Envio peticion acceso SC: 
+1 {"1":5}
+INFO Envio Reply
+1 {"1":6, "2":2}
+INFO Recibir un reloj vectorial
+1 {"1":7, "2":2, "3":2}
+INFO Recibir un reloj vectorial
+1 {"1":8, "2":3, "3":2}
+INFO Recibir un reloj vectorial
+1 {"2":3, "3":5, "1":9}
+INFO Recibir un reloj vectorial
+1 {"1":10, "2":3, "3":5}
+INFO Envio Reply
+1 {"1":11, "2":10, "3":5}
+INFO Recibir un reloj vectorial
+1 {"1":12, "2":10, "3":5}
+INFO Envio Reply
+1 {"1":13, "2":10, "3":5}
+INFO Envio peticion acceso SC: 
+1 {"1":14, "2":10, "3":5}
+INFO Envio peticion acceso SC: 
+1 {"2":10, "3":10, "1":15}
+INFO Recibir un reloj vectorial
+1 {"2":13, "3":10, "1":16}
+INFO Recibir un reloj vectorial
+1 {"1":17, "2":15, "3":17}
+INFO Recibir un reloj vectorial
+1 {"2":15, "3":17, "1":18}
+INFO Envio Reply
+1 {"1":19, "2":15, "3":18}
+INFO Recibir un reloj vectorial
+1 {"1":20, "2":15, "3":18}
+INFO Envio peticion acceso SC: 
+1 {"1":21, "2":15, "3":18}
+INFO Envio peticion acceso SC: 
+1 {"1":22, "2":19, "3":18}
+INFO Recibir un reloj vectorial
+1 {"1":23, "2":19, "3":18}
+INFO Envio Reply
+1 {"1":24, "2":19, "3":22}
+INFO Recibir un reloj vectorial
+1 {"3":22, "1":25, "2":22}
+2 {"2":1}
+Initialization Complete
+2 {"2":2}
+INFO Envio peticion acceso SC: 
+2 {"2":3}
+INFO Envio Reply
+2 {"2":4}
+INFO Envio peticion acceso SC: 
+2 {"2":5, "1":3}
+INFO Recibir un reloj vectorial
+2 {"2":6, "1":3}
+INFO Recibir un reloj vectorial
+2 {"2":7, "1":3}
+INFO Envio Reply
+2 {"2":8, "1":3, "3":3}
+INFO Recibir un reloj vectorial
+2 {"2":9, "1":3, "3":4}
+INFO Recibir un reloj vectorial
+2 {"3":4, "2":10, "1":3}
+INFO Envio peticion acceso SC: 
+2 {"2":11, "1":10, "3":5}
+INFO Recibir un reloj vectorial
+2 {"2":12, "1":10, "3":5}
+INFO Envio peticion acceso SC: 
+2 {"2":13, "1":10, "3":5}
+INFO Envio Reply
+2 {"2":14, "1":13, "3":5}
+INFO Recibir un reloj vectorial
+2 {"2":15, "1":13, "3":5}
+INFO Envio Reply
+2 {"2":16, "1":13, "3":11}
+INFO Recibir un reloj vectorial
+2 {"3":12, "2":17, "1":13}
+INFO Recibir un reloj vectorial
+2 {"3":12, "2":18, "1":13}
+INFO Envio Reply
+2 {"3":12, "2":19, "1":13}
+INFO Envio Reply
+2 {"3":18, "2":20, "1":20}
+INFO Recibir un reloj vectorial
+2 {"2":21, "1":20, "3":19}
+INFO Recibir un reloj vectorial
+2 {"2":22, "1":20, "3":19}
+INFO Envio peticion acceso SC: 
+2 {"2":23, "1":20, "3":19}
+INFO Envio peticion acceso SC: 
+2 {"2":24, "1":23, "3":19}
+INFO Recibir un reloj vectorial
+2 {"2":25, "1":23, "3":24}
+3 {"3":1}
+Initialization Complete
+3 {"3":2}
+INFO Envio peticion acceso SC: 
+3 {"3":3}
+INFO Envio Reply
+3 {"3":4}
+INFO Envio peticion acceso SC: 
+3 {"3":5}
+INFO Envio Reply
+3 {"3":6, "2":4}
+INFO Recibir un reloj vectorial
+3 {"1":4, "3":7, "2":4}
+INFO Recibir un reloj vectorial
+3 {"3":8, "2":4, "1":5}
+INFO Recibir un reloj vectorial
+3 {"3":9, "2":7, "1":5}
+INFO Recibir un reloj vectorial
+3 {"3":10, "2":7, "1":5}
+INFO Envio peticion acceso SC: 
+3 {"2":7, "1":5, "3":11}
+INFO Envio peticion acceso SC: 
+3 {"3":12, "2":7, "1":5}
+INFO Envio Reply
+3 {"3":13, "2":12, "1":10}
+INFO Recibir un reloj vectorial
+3 {"3":14, "2":12, "1":12}
+INFO Recibir un reloj vectorial
+3 {"2":12, "1":14, "3":15}
+INFO Recibir un reloj vectorial
+3 {"3":16, "2":15, "1":14}
+INFO Recibir un reloj vectorial
+3 {"3":17, "2":15, "1":14}
+INFO Envio Reply
+3 {"3":18, "2":15, "1":14}
+INFO Envio peticion acceso SC: 
+3 {"3":19, "2":15, "1":14}
+INFO Envio peticion acceso SC: 
+3 {"3":20, "2":15, "1":18}
+INFO Recibir un reloj vectorial
+3 {"1":18, "3":21, "2":18}
+INFO Recibir un reloj vectorial
+3 {"1":18, "3":22, "2":18}
+INFO Envio Reply
+3 {"3":23, "2":18, "1":21}
+INFO Recibir un reloj vectorial
+3 {"3":24, "2":18, "1":21}
+INFO Envio Reply
+3 {"3":25, "2":23, "1":21}

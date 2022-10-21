@@ -21,9 +21,9 @@ func main() { // Escritor main
 	for {
 		time.Sleep(time.Duration(50) * time.Millisecond)
 		fmt.Println(strconv.Itoa(me) + "- Empezamos el tratamiento de SC")
-		raLector.PreProtocol()                                        // ejecutamos el preprotocol pq queremos acceder a SC
-		gestorfichero.EscribirFichero("hola soy " + strconv.Itoa(me)) // accedemos a SC (leemos funcion Leer() )
-		raLector.PostProtocol()                                       // ejecutamos el postprotocolo (salimos de SC)
+		raLector.PreProtocol()                                              // ejecutamos el preprotocol pq queremos acceder a SC
+		gestorfichero.EscribirFichero("hola soy "+strconv.Itoa(me)+"\n", N) // accedemos a SC (leemos funcion Leer() )
+		raLector.PostProtocol()                                             // ejecutamos el postprotocolo (salimos de SC)
 
 	}
 }

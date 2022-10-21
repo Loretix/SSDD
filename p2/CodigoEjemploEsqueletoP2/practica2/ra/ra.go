@@ -47,7 +47,7 @@ type RASharedDB struct {
 }
 
 func New(me int, N int, op_type int, usersFile string) *RASharedDB {
-	logger := govec.InitGoVector(strconv.Itoa(me), "LogFile", govec.GetDefaultConfig())
+	logger := govec.InitGoVector(strconv.Itoa(me), "LogFile"+strconv.Itoa(me), govec.GetDefaultConfig())
 	messageTypes := []ms.Message{Request{}, Reply{}, RelojVector{}}
 	msgs := ms.New(me, usersFile, messageTypes)
 	ra := RASharedDB{0, 0, 0, false, []int{}, &msgs, make(chan bool), make(chan bool), sync.Mutex{}, me, N, op_type, logger}
