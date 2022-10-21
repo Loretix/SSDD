@@ -137,6 +137,11 @@ func (ra *RASharedDB) Recibir() {
 			if ra.HigSeqNum < tipo.Clock {
 				ra.HigSeqNum = tipo.Clock
 			}
+
+			// --------------- //
+			// Accedemps a SC  //
+			// --------------- //
+
 			ra.Mutex.Lock()
 
 			exclude := false
@@ -151,6 +156,11 @@ func (ra *RASharedDB) Recibir() {
 				(exclude) //exclude(op_type,op_t)  1 -> escritores 0 -> lectores
 
 			ra.Mutex.Unlock()
+
+			// ------------ //
+			// Finaliza SC  //
+			// ------------ //
+
 			if defer_it {
 				ra.RepDefd[tipo.Pid] = 1 // Entrariamos nosotros en SC por ello j se queda esperando
 			} else {
