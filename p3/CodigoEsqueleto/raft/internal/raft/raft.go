@@ -26,6 +26,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"math/rand"
 	"os"
 
 	//"crypto/rand"
@@ -58,7 +59,7 @@ const (
 
 type TipoOperacion struct {
 	Operacion string // La operaciones posibles son "leer" y "escribir"
-	Clave     string
+	Clave     int
 	Valor     string // en el caso de la lectura Valor = ""
 }
 
@@ -110,7 +111,10 @@ type NodoRaft struct {
 	VotosRecibidos int
 
 	// cuenta el numero de nodos que guardan la entrada
-	nodosLogCorrecto int
+	NodosLogCorrecto int
+
+	TimerEleccion *time.Timer
+	TimerLatido   *time.Timer
 }
 
 func inicializarEstado(nr *NodoRaft) {
@@ -173,7 +177,10 @@ func NuevoNodo(nodos []rpctimeout.HostPort, yo int,
 	// Realizada
 	inicializarEstado(nr)
 	nr.VotosRecibidos = 0
-	nr.nodosLogCorrecto = 0
+	nr.NodosLogCorrecto = 0
+	// enviara el primer latido en un nº aleatorio entre 50 y 200 ms
+	nr.TimerEleccion = time.NewTimer(time.Duration(rand.Intn(50)+150) * time.Millisecond)
+	nr.TimerLatido = time.NewTimer(50 * time.Millisecond)
 	return nr
 }
 
@@ -276,6 +283,8 @@ func (nr *NodoRaft) SometerOperacionRaft(operacion TipoOperacion,
 	return nil
 }
 
+// ------------------------------- funciones pedirVoto -------------------------------------------------//
+
 // -----------------------------------------------------------------------
 // LLAMADAS RPC protocolo RAFT
 //
@@ -326,6 +335,63 @@ func (nr *NodoRaft) PedirVoto(peticion *ArgsPeticionVoto,
 	return nil
 }
 
+// Ejemplo de código enviarPeticionVoto
+//
+// nodo int -- indice del servidor destino en nr.nodos[]
+//
+// args *RequestVoteArgs -- argumentos par la llamada RPC
+//
+// reply *RequestVoteReply -- respuesta RPC
+//
+// Los tipos de argumentos y respuesta pasados a CallTimeout deben ser
+// los mismos que los argumentos declarados en el metodo de tratamiento
+// de la llamada (incluido si son punteros
+//
+// Si en la llamada RPC, la respuesta llega en un intervalo de tiempo,
+// la funcion devuelve true, sino devuelve false
+//
+// la llamada RPC deberia tener un timout adecuado.
+//
+// Un resultado falso podria ser causado por una replica caida,
+// un servidor vivo que no es alcanzable (por problemas de red ?),
+// una petición perdida, o una respuesta perdida
+//
+// Para problemas con funcionamiento de RPC, comprobar que la primera letra
+// del nombre  todo los campos de la estructura (y sus subestructuras)
+// pasadas como parametros en las llamadas RPC es una mayuscula,
+// Y que la estructura de recuperacion de resultado sea un puntero a estructura
+// y no la estructura misma.
+
+func (nr *NodoRaft) enviarPeticionVoto(nodo int, args *ArgsPeticionVoto,
+	reply *RespuestaPeticionVoto) bool {
+	// Realizada
+	nr.Mux.Lock()
+	args.Term = nr.E.CurrentTerm
+	args.CandidateId = nr.Yo
+	args.LastLogIndex = nr.E.LastApplied
+	args.LastLogTerm = nr.E.Log[args.LastLogIndex].Mandato
+
+	// enviamos al nodo que nos pasan por parámetro la petición y recibimos su respuesta
+	if nr.Nodos[nodo].CallTimeout("Envio peticion voto", &args, &reply, time.Duration(25)*time.Millisecond) == nil {
+		// si es == a nil es que no ha habido error y se ha recibido respuesta
+		if reply.Term > nr.E.CurrentTerm {
+			nr.ConvertirseEnSeguidor(reply.Term)
+		} else if reply.VoteGranted == true {
+			nr.VotosRecibidos++
+			// Si tenemos la mayoria de votos nos convertimos en lider
+			if nr.VotosRecibidos > (len(nr.Nodos) / 2) {
+				nr.ConvertirseEnLider()
+			}
+		}
+		return true
+	}
+	nr.Mux.Unlock()
+
+	return false
+}
+
+// ------------------------------- funciones appendEntries -------------------------------------------------//
+
 // Lo envia el lider a los seguidores, puede ser solo un latido, o la petición de un cliente
 type ArgAppendEntries struct {
 	// Realizada
@@ -375,64 +441,6 @@ func (nr *NodoRaft) AppendEntries(args *ArgAppendEntries,
 	return nil
 }
 
-// ----- Metodos/Funciones a utilizar como clientes
-//
-//
-
-// Ejemplo de código enviarPeticionVoto
-//
-// nodo int -- indice del servidor destino en nr.nodos[]
-//
-// args *RequestVoteArgs -- argumentos par la llamada RPC
-//
-// reply *RequestVoteReply -- respuesta RPC
-//
-// Los tipos de argumentos y respuesta pasados a CallTimeout deben ser
-// los mismos que los argumentos declarados en el metodo de tratamiento
-// de la llamada (incluido si son punteros
-//
-// Si en la llamada RPC, la respuesta llega en un intervalo de tiempo,
-// la funcion devuelve true, sino devuelve false
-//
-// la llamada RPC deberia tener un timout adecuado.
-//
-// Un resultado falso podria ser causado por una replica caida,
-// un servidor vivo que no es alcanzable (por problemas de red ?),
-// una petición perdida, o una respuesta perdida
-//
-// Para problemas con funcionamiento de RPC, comprobar que la primera letra
-// del nombre  todo los campos de la estructura (y sus subestructuras)
-// pasadas como parametros en las llamadas RPC es una mayuscula,
-// Y que la estructura de recuperacion de resultado sea un puntero a estructura
-// y no la estructura misma.
-func (nr *NodoRaft) enviarPeticionVoto(nodo int, args *ArgsPeticionVoto,
-	reply *RespuestaPeticionVoto) bool {
-	// Realizada
-	nr.Mux.Lock()
-	args.Term = nr.E.CurrentTerm
-	args.CandidateId = nr.Yo
-	args.LastLogIndex = nr.E.LastApplied
-	args.LastLogTerm = nr.E.Log[args.LastLogIndex].Mandato
-
-	// enviamos al nodo que nos pasan por parámetro la petición y recibimos su respuesta
-	if nr.Nodos[nodo].CallTimeout("Envio peticion voto", &args, &reply, time.Duration(25)*time.Millisecond) == nil {
-		// si es == a nil es que no ha habido error y se ha recibido respuesta
-		if reply.Term > nr.E.CurrentTerm {
-			// pasamos a ser seguidor ;)
-		} else if reply.VoteGranted == true {
-			nr.VotosRecibidos++
-			// Si tenemos la mayoria de votos nos convertimos en lider
-			if nr.VotosRecibidos > len(nr.Nodos)/2 {
-				// nos convertimos en lider
-			}
-		}
-		return true
-	}
-	nr.Mux.Unlock()
-
-	return false
-}
-
 // El lider envia el AppendEntries = latido a los demas nodos
 func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 	reply *Results) bool {
@@ -469,10 +477,10 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 		} else if !reply.Success {
 			// es false por tanto no se ha comprometido la entrada se trata el caso
 		} else { // La entrada se ha registrado el en Log correctamente
-			nr.nodosLogCorrecto++
-			if nr.nodosLogCorrecto > len(nr.Nodos)/2 {
+			nr.NodosLogCorrecto++
+			if nr.NodosLogCorrecto > len(nr.Nodos)/2 {
 				// comprometemos la entrada ya que tenemos mayoria
-				nr.nodosLogCorrecto = 0
+				nr.NodosLogCorrecto = 0
 				nr.E.CommitIndex = args.PrevLogIndex + 1
 				nr.E.NextIndex[nodo]++
 				nr.E.MatchIndex[nodo]++
@@ -483,4 +491,75 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 	nr.Mux.Unlock()
 
 	return false
+}
+
+// ------------------------------- funciones cambio Roll --------------------------------------------//
+
+func (nr *NodoRaft) ConvertirseEnSeguidor(mandato int) {
+	nr.Roll = SEGUIDOR
+	nr.E.CurrentTerm = mandato
+	nr.E.VotedFor = -1
+	// tiempo aleatorio entre 50 y 200 milisegundos
+	tiempo := time.Duration(rand.Intn(50)+150) * time.Millisecond
+	nr.TimerEleccion.Reset(tiempo)
+	nr.TimerLatido.Stop()
+}
+
+func (nr *NodoRaft) ConvertirseEnLider() {
+	nr.Roll = LIDER
+	nr.IdLider = nr.Yo
+	// Inicializar nextIndex
+	for i := 0; i < len(nr.E.NextIndex); i++ {
+		nr.E.NextIndex = append(nr.E.NextIndex, nr.E.LastApplied+1)
+	}
+	// Inicializar matchIndex
+	for i := 0; i < len(nr.Nodos); i++ {
+		nr.E.MatchIndex = append(nr.E.MatchIndex, 0)
+	}
+	// Preparamos los parámetros para enviar los latidos
+	var reply Results
+	var args ArgAppendEntries
+
+	args.Term = nr.E.CurrentTerm
+	args.LeaderId = nr.IdLider
+	args.PrevLogIndex = nr.E.LastApplied
+	args.PrevLogTerm = nr.E.Log[args.PrevLogIndex].Mandato
+	args.Entries = nil
+	args.LeaderCommit = nr.E.CommitIndex
+
+	// enviar RPC de AppendEntries vacios iniciales
+	for i := 0; i < len(nr.Nodos); i++ {
+		if i != nr.Yo {
+			go nr.enviarAppendEntries(i, &args, &reply)
+		}
+	}
+	// gestion de timers
+	nr.TimerEleccion.Stop()
+	nr.TimerLatido.Reset(50)
+
+}
+
+func (nr *NodoRaft) ConvertirseEnCandidato() {
+	nr.Mux.Lock()
+	nr.Roll = CANDIDATO
+	nr.E.CurrentTerm++ // votamos popr nosotros mismos
+	nr.NodosLogCorrecto++
+	nr.Mux.Unlock()
+	// preparamos los parámetros para la solicitud del voto
+	var reply RespuestaPeticionVoto
+	var args ArgsPeticionVoto
+	args.Term = nr.E.CurrentTerm
+	args.CandidateId = nr.Yo
+	args.LastLogIndex = nr.E.CommitIndex
+	args.LastLogTerm = nr.E.Log[args.LastLogIndex].Mandato
+	// solicitamos el voto
+	for i := 0; i < len(nr.Nodos); i++ {
+		go nr.enviarPeticionVoto(i, &args, &reply)
+		// en la práctica 5 se tendra que comprobar el bool de respuesta para saber si ha llegado sin problemas
+	}
+	nr.Mux.Lock()
+	// gestion de los timers para comenzar una nueva eleccion si es necesario
+	tiempo := time.Duration(rand.Intn(50)+150) * time.Millisecond
+	nr.TimerEleccion.Reset(tiempo)
+	nr.Mux.Unlock()
 }

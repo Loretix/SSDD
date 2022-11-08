@@ -41,7 +41,8 @@ Campos existentes:
         Logger *log.Logger	    // Utilización opcional de este logger para depuración
         E Estado                // se define debajo
         Roll string             //  Roll (SEGUIDOR, LIDER, CANDIDATO)
-
+        TimerEleccion *time.Timer 
+        TimerLatido   *time.Timer 
 
     - Estado 
         CurrentTerm int         // mandato actual 
@@ -50,8 +51,8 @@ Campos existentes:
         CommitIndex int         // indice de la última petición comprometida
         LastApplied int         // índice de la última petición guardada (no tiene por que estar comprometida)
         // respecto a las peticiones de los clientes
-        NextIndex []int         //indice de la sig entrada de reg para enviar
-        MatchIndex []int        //indice de la entrada de reg mas alta
+        NextIndex []int         // indice de la sig entrada de reg para enviar
+        MatchIndex []int        // indice de la entrada de reg mas alta comprometida
 
     - ArgsPeticionVoto
         Term         int         // mandato del candidato
