@@ -1,1 +1,5 @@
-127.0.0.1_29003 -> 22:50:34.911074 raft.go:128: logger initialized
+127.0.0.1_29003 -> 17:14:51.190330 raft.go:172: logger initialized
+127.0.0.1_29003 -> 17:14:51.240959 raft.go:617: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29003 -> 17:14:51.372432 raft.go:604: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29003 -> 17:14:51.372500 raft.go:608: Gestion: Somos: SEGUIDOR - TimerEleccion ha expirado
+127.0.0.1_29003 -> 17:14:51.372514 raft.go:572: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
