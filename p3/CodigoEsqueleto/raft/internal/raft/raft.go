@@ -121,8 +121,12 @@ func inicializarEstado(nr *NodoRaft) {
 	nr.E.CurrentTerm = 0
 	nr.E.VotedFor = -1
 	nr.E.MatchIndex = make([]int, len(nr.Nodos))
-	nr.E.NextIndex = make([]int, len(nr.Nodos))
+	for i := 0; i < len(nr.Nodos); i++ {
+		nr.E.NextIndex = append(nr.E.NextIndex, 1)
+	}
 	nr.E.Log = make([]RegistroOp, 1)
+	nr.E.LastApplied = 0
+	nr.E.CommitIndex = 0
 	nr.Roll = SEGUIDOR
 }
 
@@ -176,7 +180,7 @@ func NuevoNodo(nodos []rpctimeout.HostPort, yo int,
 
 	inicializarEstado(nr)
 	nr.VotosRecibidos = 0
-	nr.NodosLogCorrecto = 0
+	nr.NodosLogCorrecto = 1
 	// enviara el primer latido en un nº aleatorio entre 50 y 200 ms
 	nr.TimerEleccion = time.NewTimer(time.Duration(rand.Intn(50)+150) * time.Millisecond)
 	nr.TimerLatido = time.NewTimer(50 * time.Millisecond)
@@ -237,7 +241,9 @@ func (nr *NodoRaft) someterOperacion(operacion TipoOperacion) (int, int,
 	valorADevolver := ""
 
 	if EsLider {
-		nr.E.Log = append(nr.E.Log, RegistroOp{Comando: operacion.Operacion, Mandato: operacion.Clave})
+		nr.E.Log = append(nr.E.Log, RegistroOp{Comando: operacion.Operacion, Mandato: nr.E.CurrentTerm})
+		nr.Logger.Println("SometerOperacion: nuevo log ", nr.E.Log)
+
 		valorADevolver = operacion.Valor // Devolvemos valor leido en caso de q exista
 		indice = indice + 1
 		nr.E.LastApplied = indice // actualizamos el índice, pq hemos añadido una entrada
@@ -318,27 +324,29 @@ type RespuestaPeticionVoto struct {
 // de ArgsPeticionVoto envia su respuesta mediante el tipo RespuestaPeticionVoto
 func (nr *NodoRaft) PedirVoto(peticion *ArgsPeticionVoto,
 	reply *RespuestaPeticionVoto) error {
-
+	nr.Logger.Println("Me ha llegado una solicitud para que vote a: ", peticion.CandidateId)
 	nr.Mux.Lock()
 	reply.VoteGranted = false
 	reply.Term = nr.E.CurrentTerm
+	nr.Mux.Unlock()
 	if peticion.Term >= nr.E.CurrentTerm {
+		nr.Logger.Println("PedirVoto: nos convertimos a seguidor")
 		nr.ConvertirseEnSeguidor(peticion.Term)
 	}
 
 	var doyVoto bool = (nr.E.VotedFor == -1 || nr.E.VotedFor == peticion.CandidateId) && nr.E.CommitIndex <= peticion.LastLogIndex
 	if doyVoto {
-
+		nr.Mux.Lock()
 		nr.E.VotedFor = peticion.CandidateId // Empezamos a votar al nuevo candidato
 		reply.VoteGranted = true
 		reply.Term = peticion.Term
+		nr.Mux.Unlock()
 		nr.Logger.Println("PedirVoto: voto a ", nr.E.VotedFor)
 		nr.ConvertirseEnSeguidor(peticion.Term)
 	} else {
 		nr.Logger.Println("PedirVoto: no le concedo el voto a ", nr.E.VotedFor)
 	}
 
-	nr.Mux.Unlock()
 	return nil
 }
 
@@ -390,7 +398,7 @@ func (nr *NodoRaft) enviarPeticionVoto(nodo int, args *ArgsPeticionVoto,
 			nr.Mux.Unlock()
 			nr.Logger.Println("enviarPeticionVoto: recibo voto")
 			// Si tenemos la mayoria de votos nos convertimos en lider
-			if nr.VotosRecibidos > (len(nr.Nodos) / 2) {
+			if (nr.VotosRecibidos > (len(nr.Nodos) / 2)) && nr.Roll == CANDIDATO {
 				nr.Logger.Println("enviarPeticionVoto: gano por mayoria ")
 				nr.ConvertirseEnLider() // incluye enviar latido
 			}
@@ -422,31 +430,36 @@ func (nr *NodoRaft) AppendEntries(args *ArgAppendEntries,
 	results *Results) error {
 	nr.Mux.Lock()
 
-	nr.Logger.Println("AppendEntries: recibido latido del lider: ", args.LeaderId, "con Entries: ", args.Entries)
+	nr.Logger.Println("AppendEntries: recibido latido del lider: ", args.LeaderId, "con mandato", args.Term, " y Entries: ", args.Entries, " LastApplied: ", nr.E.LastApplied)
 
 	nr.TimerEleccion.Reset(time.Duration(rand.Intn(50)+150) * time.Millisecond) // reseteamos tiempo de timeout para el latido
 	results.Success = true
 	results.Term = nr.E.CurrentTerm
+	nr.Mux.Unlock()
 	// 1. Responda falso si termino < termino actual
 	if args.Term < nr.E.CurrentTerm {
+		nr.Mux.Lock()
 		results.Success = false
 		results.Term = nr.E.CurrentTerm
-
+		nr.Mux.Unlock()
 		nr.Logger.Println("AppendEntries: Enviamos Respuesta de si estamos actualizados: ", results.Success)
 	} else {
 		if args.Term > nr.E.CurrentTerm {
 			nr.ConvertirseEnSeguidor(args.Term)
 		}
+		nr.Mux.Lock()
 		// pasos dos y tres se realizarán en la práctica 5
 		nr.IdLider = args.LeaderId
 		// 4. Annadir entradas nuevas que aun no esten en el registro
-		var i int
-		for i = nr.E.LastApplied + 1; i < len(args.Entries); i++ {
-			nr.E.Log = append(nr.E.Log, args.Entries[i])
-			nr.E.LastApplied++
+		if args.Entries != nil {
+			var i int
+			for i = 0; i < len(args.Entries); i++ {
+				nr.E.Log = append(nr.E.Log, args.Entries[i])
+				nr.E.LastApplied++
+			}
+			nr.Logger.Println("AppendEntries: Soy servidor y he modificado mi log: ", nr.E.Log)
+
 		}
-		nr.Logger.Println("AppendEntries: Soy servidor y he modificado mi log: ", nr.E.Log)
-		nr.E.LastApplied = i
 		// 5. Si leaderCommit > commitIndex, commitIndex = min(leaderCommit, indice de la ultima entrada nueva)
 		if args.LeaderCommit > nr.E.CommitIndex {
 			if args.LeaderCommit < nr.E.LastApplied {
@@ -454,9 +467,10 @@ func (nr *NodoRaft) AppendEntries(args *ArgAppendEntries,
 			} else {
 				nr.E.CommitIndex = nr.E.LastApplied
 			}
+			nr.Logger.Println("AppendEntries: Soy servidor y he comprometido mi entrada ", nr.E.CommitIndex)
 		}
+		nr.Mux.Unlock()
 	}
-	nr.Mux.Unlock()
 
 	return nil
 }
@@ -464,32 +478,20 @@ func (nr *NodoRaft) AppendEntries(args *ArgAppendEntries,
 // El lider envia el AppendEntries = latido a los demas nodos
 func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 	reply *Results) bool {
-
 	nr.Mux.Lock()
+	// comenzamos a preparar los parámetros para enviarlos
 	args.Term = nr.E.CurrentTerm
 	args.LeaderId = nr.Yo
 	args.LeaderCommit = nr.E.CommitIndex
 	args.PrevLogIndex = nr.E.NextIndex[nodo] - 1
-	args.PrevLogTerm = nr.E.Log[args.PrevLogIndex-1].Mandato
+	args.PrevLogTerm = nr.E.Log[args.PrevLogIndex].Mandato
 
-	// Creamos el vector de nuevas entradas a enviar (Entries) para ello hacemos
-	// un bucle for que lee el vector de registro (Log) desde el indice (next)
-	// ya que es en este en el que se guardaran las nuevas entradas a comprometer
-	// La longitud de lo que se va a leer en Log es len(nr.E.Log)-nr.E.NextIndex[nodo],
-	// ya que es la longitud total del Log del lider - el indice de las nuevas entradas
-	// que se podran llegar a comprometer. Ejemplo :
-	//             0   1   2  3  4
-	// 		lider [3] [2] [] [] []		nextIndex=1; prevIndex=0; prevTerm=3; commitTerm=3
-	//		s1 	  [3] []
-	// 	len(nr.E.Log)-nr.E.NextIndex[nodo] => len(nr.E.Log) = 2
-	//										nr.E.NextIndex[nodo] = 1
-	//										2-1 = 1, Longitud de entries = 1, una entrada nueva
-
-	for i := nr.E.NextIndex[nodo]; i < len(nr.E.Log)-nr.E.NextIndex[nodo]; i++ {
-		args.Entries = append(args.Entries, nr.E.Log[i])
+	for i := 0; i < len(nr.E.Log)-nr.E.NextIndex[nodo]; i++ {
+		nr.Logger.Println("log: ", nr.E.Log[nr.E.NextIndex[nodo]+i])
+		args.Entries = append(args.Entries, nr.E.Log[nr.E.NextIndex[nodo]+i])
 	}
-	nr.Logger.Println("enviarAppendEntries: valor de Entries: ", args.Entries)
-
+	nr.Logger.Println("enviarAppendEntries: valor de Entries: ", args.Entries, "con nextIndex: ", nr.E.NextIndex[nodo])
+	nr.Mux.Unlock()
 	// enviamos al nodo que nos pasan por parámetro la petición y recibimos su respuesta
 	if nr.Nodos[nodo].CallTimeout("NodoRaft.AppendEntries", &args, &reply, time.Duration(25)*time.Millisecond) == nil {
 		// si es == a nil es que no ha habido error y se ha recibido respuesta
@@ -498,34 +500,41 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 		} else if !reply.Success {
 			// es false por tanto no se ha comprometido la entrada se trata el caso
 		} else { // La entrada se ha registrado el en Log correctamente
-			nr.NodosLogCorrecto++
-			if nr.NodosLogCorrecto > len(nr.Nodos)/2 {
-				// comprometemos la entrada ya que tenemos mayoria
-				nr.NodosLogCorrecto = 0
-				nr.E.CommitIndex = args.PrevLogIndex + 1
+			nr.Mux.Lock()
+			if args.Entries != nil {
+				nr.NodosLogCorrecto++
 				nr.E.NextIndex[nodo]++
 				nr.E.MatchIndex[nodo]++
-				nr.Logger.Println("enviarAppendEntries: entrada comprometida con CommitIndex= ",
-					nr.E.CommitIndex, " NextIndex= ", nr.E.NextIndex[nodo], " MatchIndex= ", nr.E.MatchIndex[nodo])
+				if nr.NodosLogCorrecto > len(nr.Nodos)/2 {
+					// comprometemos la entrada ya que tenemos mayoria
+					nr.NodosLogCorrecto = 1
+					nr.E.CommitIndex = args.PrevLogIndex + 1
+					nr.Logger.Println("enviarAppendEntries: entrada comprometida con CommitIndex= ",
+						nr.E.CommitIndex, " NextIndex= ", nr.E.NextIndex[nodo], " MatchIndex= ", nr.E.MatchIndex[nodo])
+				}
 			}
+
+			nr.Mux.Unlock()
 		}
 		return true
 	}
-	nr.Mux.Unlock()
 
 	return false
 }
 
 func (nr *NodoRaft) Latir() {
-	nr.Logger.Println("Latir: Soy LIDER: ", nr.Yo, " y empiezo a enviar latidos")
+	nr.Logger.Println("Latir: Soy LIDER: ", nr.Yo, " con mandato ", nr.E.CurrentTerm, "y Log", nr.E.Log, " y empiezo a enviar latidos")
 	var reply Results
 	var args ArgAppendEntries
 	// enviar RPC de AppendEntries vacios iniciales
-	nr.NodosLogCorrecto = 0
-	for i := 0; i < len(nr.Nodos); i++ {
-		if i != nr.Yo {
-			nr.Logger.Println("Latir: Soy LIDER: ", nr.Yo, " y empiezo a envio latido a:", i)
-			go nr.enviarAppendEntries(i, &args, &reply)
+	nr.Mux.Lock()
+	nr.NodosLogCorrecto = 1
+	nr.Mux.Unlock()
+
+	for j := 0; j < len(nr.Nodos); j++ {
+		if j != nr.Yo {
+			nr.Logger.Println("Latir: Soy LIDER: ", nr.Yo, " con mandato ", nr.E.CurrentTerm, "y Log", nr.E.Log, " y empiezo a envio latido a:", j)
+			go nr.enviarAppendEntries(j, &args, &reply)
 		}
 	}
 }
@@ -571,7 +580,7 @@ func (nr *NodoRaft) ConvertirseEnCandidato() {
 	nr.Mux.Lock()
 	nr.Roll = CANDIDATO
 	nr.E.CurrentTerm++ // votamos por nosotros mismos
-	nr.VotosRecibidos++
+	nr.VotosRecibidos = 1
 	// preparamos los parámetros para la solicitud del voto
 	var reply RespuestaPeticionVoto
 	var args ArgsPeticionVoto

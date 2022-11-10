@@ -1,5 +1,139 @@
-127.0.0.1_29002 -> 17:14:51.127045 raft.go:172: logger initialized
-127.0.0.1_29002 -> 17:14:51.178228 raft.go:617: Gestion: Tiempo latido TIMEOUT
-127.0.0.1_29002 -> 17:14:51.308369 raft.go:604: Gestion: Tiempo eleccion TIMEOUT
-127.0.0.1_29002 -> 17:14:51.308472 raft.go:608: Gestion: Somos: SEGUIDOR - TimerEleccion ha expirado
-127.0.0.1_29002 -> 17:14:51.308495 raft.go:572: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29002 -> 17:10:38.344361 raft.go:176: logger initialized
+127.0.0.1_29002 -> 17:10:38.394862 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29002 -> 17:10:38.406683 raft.go:327: Me ha llegado una solicitud para que vote a:  0
+127.0.0.1_29002 -> 17:10:38.406713 raft.go:333: PedirVoto: nos convertimos a seguidor
+127.0.0.1_29002 -> 17:10:38.406728 raft.go:547: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+127.0.0.1_29002 -> 17:10:38.406744 raft.go:344: PedirVoto: voto a  0
+127.0.0.1_29002 -> 17:10:38.406757 raft.go:547: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+127.0.0.1_29002 -> 17:10:38.407603 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.457898 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.508355 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.559829 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.609596 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.660246 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.712849 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.762539 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.813276 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.863824 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.915013 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:38.965129 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.015445 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.065889 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.116402 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.167542 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.217958 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.269430 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.319958 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.370441 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.420967 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.471226 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.522213 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.574690 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.624497 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.675883 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.725706 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.777846 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.827691 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.878636 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.929825 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:39.980325 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.031262 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.081696 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.133234 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.182439 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.235127 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.284325 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.337683 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.386217 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.436729 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.488418 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.538628 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.591274 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.639902 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.690877 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.741556 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.792492 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.843675 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.894285 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.946148 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:40.996303 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.047089 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.097426 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.147974 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.198374 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.248721 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.298839 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.349907 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.399972 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.451115 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.502302 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  [{escritura 30}]  LastApplied:  0
+127.0.0.1_29002 -> 17:10:41.502340 raft.go:460: AppendEntries: Soy servidor y he modificado mi log:  [{ 0} {escritura 30}]
+127.0.0.1_29002 -> 17:10:41.552517 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:41.552540 raft.go:470: AppendEntries: Soy servidor y he comprometido mi entrada  1
+127.0.0.1_29002 -> 17:10:41.602998 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:41.656053 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:41.705526 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:41.756468 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:41.806930 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:41.858708 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:41.908928 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:41.960098 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.010924 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.061425 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.111757 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.162009 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.212302 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.263234 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.314271 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.366058 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.416841 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.466474 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.519399 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.568536 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.619469 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.670214 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.723081 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.773120 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.825019 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.874481 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.925619 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:42.977393 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.027997 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.080981 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.130394 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.182330 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.233646 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.283178 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.336393 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.385031 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.436965 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.486785 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.539306 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.588533 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.639082 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.689282 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.739631 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.790504 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.841216 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.891601 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.943744 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:43.994109 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.045451 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.097177 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.147195 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.200122 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.250003 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.300175 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.351643 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.402187 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.452147 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.502795 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.553376 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.604385 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.654676 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.705081 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.755599 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.806582 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.857366 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.908643 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1
+127.0.0.1_29002 -> 17:10:44.959172 raft.go:433: AppendEntries: recibido latido del lider:  0 con mandato 30  y Entries:  []  LastApplied:  1

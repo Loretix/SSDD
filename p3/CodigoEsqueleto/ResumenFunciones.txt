@@ -129,3 +129,11 @@ Instruccinoes para ejecutar:
     ----------------------------------
     
     $ go build internal/raft/raft.go & go build cmd/srvraft/main.go & go run cmd/srvraft/main.go 0 127.0.0.1:29001
+
+    -----------------------------------
+
+    kill $(ps | grep main) & kill $(ps | grep main.go)
+
+    -----------------------------------
+
+    go run pkg/cltraft/main.go 127.0.0.1:1230

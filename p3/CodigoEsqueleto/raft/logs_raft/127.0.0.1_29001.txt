@@ -1,0 +1,937 @@
+127.0.0.1_29001 -> 17:10:33.057426 raft.go:176: logger initialized
+127.0.0.1_29001 -> 17:10:33.107816 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:33.239212 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:33.239426 raft.go:615: Gestion: Somos: SEGUIDOR - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:33.239546 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:33.239682 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:33.239811 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:33.427402 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:33.427482 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:33.427498 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:33.427582 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:33.427622 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:33.625220 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:33.625300 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:33.625317 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:33.625353 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:33.625433 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:33.784968 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:33.785041 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:33.785076 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:33.785191 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:33.785229 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:33.966853 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:33.966961 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:33.967005 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:33.967158 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:33.967159 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:34.135550 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:34.135606 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:34.135621 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:34.135664 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:34.135656 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:34.311305 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:34.311398 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:34.311414 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:34.311470 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:34.311471 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:34.502107 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:34.502215 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:34.502230 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:34.502268 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:34.502302 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:34.658774 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:34.658911 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:34.658965 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:34.659066 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:34.659067 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:34.809852 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:34.810030 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:34.810079 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:34.810179 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:34.810198 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.005116 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:35.005240 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:35.005280 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:35.005474 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.005471 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.167061 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:35.167223 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:35.167264 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:35.167401 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.167439 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.330329 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:35.330493 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:35.330528 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:35.330604 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.330597 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.520423 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:35.520544 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:35.520579 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:35.520665 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.520669 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.699192 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:35.699275 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:35.699293 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:35.699337 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.699339 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.873992 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:35.874148 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:35.874324 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:35.874624 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:35.874744 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.035898 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:36.036135 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:36.036317 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:36.036544 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.036541 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.232028 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:36.232192 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:36.232208 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:36.232245 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.232401 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.419997 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:36.420067 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:36.420090 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:36.420148 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.420148 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.576866 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:36.576940 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:36.576977 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:36.577028 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.577043 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.772804 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:36.773018 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:36.773086 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:36.773233 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.773273 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.939351 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:36.939571 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:36.939637 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:36.939796 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:36.939840 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:37.117933 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:37.118048 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:37.118131 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:37.118347 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:37.118348 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:37.277106 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:37.277262 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:37.277379 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:37.277614 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:37.277614 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:37.475008 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:37.475195 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:37.475382 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:37.475600 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:37.475599 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:37.672732 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:37.672893 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:37.672960 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:37.673174 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:37.673149 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:37.860755 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:37.860851 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:37.860883 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:37.860937 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:37.860958 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:38.049528 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:38.049590 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:38.049605 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:38.049641 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:38.049645 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:38.240167 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:38.240254 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:38.240273 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:38.240350 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:38.240371 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:38.405889 raft.go:612: Gestion: Tiempo eleccion TIMEOUT
+127.0.0.1_29001 -> 17:10:38.405933 raft.go:618: Gestion: Somos: CANDIDATO - TimerEleccion ha expirado
+127.0.0.1_29001 -> 17:10:38.405948 raft.go:581: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+127.0.0.1_29001 -> 17:10:38.405983 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:38.405985 raft.go:383: enviarPeticionVoto: procedo a enviar la peticion de voto
+127.0.0.1_29001 -> 17:10:38.407049 raft.go:399: enviarPeticionVoto: recibo voto
+127.0.0.1_29001 -> 17:10:38.407070 raft.go:402: enviarPeticionVoto: gano por mayoria 
+127.0.0.1_29001 -> 17:10:38.407083 raft.go:560: ConvertirseEnLider: Nos convertimos en LIDER
+127.0.0.1_29001 -> 17:10:38.407115 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.407140 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.407177 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.407193 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.457139 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.457201 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.457254 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.457280 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.457343 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.457361 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.507511 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.507637 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.507704 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.507722 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.507805 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.507836 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.558254 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.558362 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.558442 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.558488 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.558592 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.558635 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.608633 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.608703 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.608752 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.608794 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.608837 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.608853 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.659402 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.659478 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.659514 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.659535 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.659582 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.659602 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.710334 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.710583 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.710991 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.711169 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.711323 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.711376 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.761585 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.761654 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.761708 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.761741 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.761818 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.761847 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.812550 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.812684 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.812747 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.812805 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.812847 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.812858 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.863049 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.863099 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.863147 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.863166 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.863207 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.863219 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.913652 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.913817 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.913911 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.914000 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.914148 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.914234 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:38.964544 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:38.964586 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:38.964630 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:38.964645 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:38.964682 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:38.964693 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.014724 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.014770 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.014814 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.014830 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.014873 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.014885 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.065134 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.065222 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.065248 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.065264 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.065298 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.065309 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.115551 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.115597 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.115620 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.115630 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.115665 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.115705 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.166054 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.166202 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.166288 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.166327 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.166419 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.166450 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.216410 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.216566 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.216747 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.216808 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.216939 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.217008 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.267718 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.268004 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.268117 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.268187 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.268327 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.268384 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.319117 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.319173 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.319198 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.319213 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.319248 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.319274 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.369588 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.369641 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.369670 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.369687 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.369722 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.369736 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.420071 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.420122 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.420157 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.420176 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.420230 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.420249 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.470611 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.470678 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.470702 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.470718 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.470757 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.470769 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.521060 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.521196 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.521300 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.521377 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.521502 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.521573 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.572231 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.572419 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.572689 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.572823 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.573130 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.573285 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.623393 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.623446 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.623476 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.623508 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.623560 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.623589 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.674387 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.674567 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.674722 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.674830 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.675007 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.675091 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.724935 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.725002 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.725043 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.725073 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.725128 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.725153 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.775533 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.775820 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.775934 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.775988 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.776214 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.776273 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.826839 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.826922 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.826958 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.826976 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.827021 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.827038 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.877601 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.877688 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.877808 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.877869 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.877917 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.877929 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.927840 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.928045 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.928200 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.928283 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.928551 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.928620 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:39.978953 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:39.979148 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:39.979240 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:39.979323 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:39.979364 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:39.979376 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.030257 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.030424 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.030545 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.030609 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.030770 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.030804 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.081075 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.081172 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.081201 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.081218 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.081253 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.081280 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.131402 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.131598 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.131847 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.132000 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.132290 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.132426 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.181806 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.181877 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.181925 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.181946 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.181991 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.182004 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.232408 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.232635 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.232766 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.232906 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.233130 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.233270 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.283390 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.283499 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.283612 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.283703 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.283746 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.283761 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.334180 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.334403 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.334775 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.334935 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.335249 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.335386 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.385323 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.385397 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.385491 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.385529 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.385565 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.385578 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.435996 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.436109 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.436193 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.436213 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.436275 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.436287 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.486714 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.486948 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.487074 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.487155 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.487304 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.487372 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.538045 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.538089 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.538118 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.538136 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.538172 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.538185 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.588168 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.588401 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.588594 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.588726 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.589026 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.589177 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.639102 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.639169 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.639201 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.639233 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.639279 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.639295 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.689757 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.689926 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.689987 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.690018 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.690094 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.690147 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.740619 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.740740 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.740860 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.740933 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.741084 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.741127 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.791232 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.791352 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.791449 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.791468 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.791525 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.791537 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.842385 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.842522 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.842621 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.842640 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.842690 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.842743 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.893143 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.893321 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.893395 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.893436 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.893488 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.893513 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.944022 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.944231 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.944347 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.944399 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.944513 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.944570 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:40.995064 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:40.995184 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:40.995243 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:40.995280 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:40.995353 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:40.995385 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.046270 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.046324 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.046350 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.046366 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.046400 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:41.046413 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.096724 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.096774 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.096798 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.096814 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.096847 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:41.096864 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.147108 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.147163 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.147188 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.147203 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.147250 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:41.147263 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.197588 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.197634 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.197665 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.197680 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.197715 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:41.197728 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.248097 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.248139 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.248173 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.248190 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.248235 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:41.248250 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.298188 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.298243 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.298273 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.298291 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.298349 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:41.298363 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.349240 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.349300 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.349348 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.349367 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.349409 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:41.349428 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.399359 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.399410 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.399460 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.399478 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.399523 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:41.399539 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.450500 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.450548 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.450581 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.450598 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.450640 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0}]
+127.0.0.1_29001 -> 17:10:41.450658 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.490981 raft.go:245: SometerOperacion: nuevo log  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.501559 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.501611 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.501657 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.501686 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.501729 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  1  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.501746 raft.go:491: log:  {escritura 30}
+127.0.0.1_29001 -> 17:10:41.501761 raft.go:494: enviarAppendEntries: valor de Entries:  [{escritura 30}] con nextIndex:  1
+127.0.0.1_29001 -> 17:10:41.502553 raft.go:509: votos que tenemos  2
+127.0.0.1_29001 -> 17:10:41.502581 raft.go:514: enviarAppendEntries: entrada comprometida con CommitIndex=  1  NextIndex=  2  MatchIndex=  1
+127.0.0.1_29001 -> 17:10:41.551963 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.552009 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.552039 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.552056 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.552110 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.552123 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:41.602046 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.602105 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.602148 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.602189 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.602252 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.602270 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:41.652979 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.653217 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.653498 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.653661 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.653959 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.654237 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:41.704315 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.704382 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.704431 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.704517 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.704609 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.704644 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:41.755524 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.755680 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.755845 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.755933 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.755998 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.756015 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:41.806134 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.806227 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.806299 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.806317 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.806397 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.806412 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:41.856895 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.857085 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.857300 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.857460 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.857628 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.857679 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:41.908154 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.908205 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.908266 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.908304 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.908363 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.908381 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:41.958925 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:41.959010 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:41.959076 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:41.959136 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:41.959288 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:41.959311 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.009832 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.009896 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.009941 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.009968 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.010027 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.010053 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.060694 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.060744 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.060769 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.060786 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.060838 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.060852 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.111006 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.111060 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.111085 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.111103 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.111158 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.111171 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.161380 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.161426 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.161452 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.161464 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.161491 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.161501 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.211685 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.211748 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.211769 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.211780 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.211806 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.211815 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.262082 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.262203 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.262290 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.262320 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.262456 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.262483 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.313097 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.313178 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.313234 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.313269 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.313340 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.313375 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.363354 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.363532 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.363675 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.363846 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.364146 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.364241 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.414241 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.414388 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.414609 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.414773 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.415119 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.415200 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.465116 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.465329 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.465508 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.465555 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.465708 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.465749 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.516355 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.516600 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.516750 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.516922 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.517232 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.517363 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.567797 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.567885 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.567930 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.567953 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.568020 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.568036 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.618342 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.618405 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.618455 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.618506 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.618584 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.618678 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.668899 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.669053 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.669159 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.669197 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.669277 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.669328 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.720225 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.720440 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.720625 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.720782 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.721065 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.721274 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.771223 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.771387 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.771500 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.771562 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.771708 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.771752 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.822414 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.822560 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.822773 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.822914 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.823139 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.823253 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.873173 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.873253 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.873313 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.873473 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.873670 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.873728 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.924288 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.924556 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.924841 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.924952 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.925089 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.925134 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:42.975441 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:42.975578 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:42.975661 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:42.975711 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:42.975838 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:42.975882 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.026456 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.026686 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.026883 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.026942 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.027082 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.027143 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.077898 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.078095 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.078422 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.078678 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.078984 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.079118 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.128763 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.128865 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.128977 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.129106 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.129305 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.129383 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.179501 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.179740 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.179929 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.180172 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.180490 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.180589 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.230597 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.230946 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.231238 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.231408 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.231720 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.231810 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.281886 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.282134 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.282308 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.282367 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.282497 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.282551 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.333008 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.333255 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.333671 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.333856 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.334166 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.334294 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.384379 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.384473 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.384501 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.384516 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.384556 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.384569 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.434939 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.435102 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.435230 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.435296 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.435434 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.435484 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.486159 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.486241 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.486270 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.486309 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.486351 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.486366 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.536778 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.536928 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.537140 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.537288 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.537580 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.537730 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.587166 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.587322 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.587390 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.587430 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.587518 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.587550 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.637885 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.637950 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.638002 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.638052 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.638118 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.638135 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.688439 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.688488 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.688537 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.688556 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.688597 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.688608 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.738665 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.738712 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.738744 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.738766 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.738817 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.738836 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.789810 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.789871 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.789901 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.789937 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.789975 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.789992 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.840452 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.840506 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.840563 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.840582 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.840632 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.840648 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.890869 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.890934 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.890965 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.890983 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.891028 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.891044 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.941613 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.941741 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.941869 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.941935 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.942056 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.942108 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:43.992847 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:43.992922 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:43.992958 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:43.992977 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:43.993021 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:43.993042 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.044095 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.044158 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.044208 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.044240 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.044304 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.044349 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.094624 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.094850 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.095042 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.095193 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.095408 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.095599 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.146070 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.146130 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.146173 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.146201 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.146269 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.146322 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.197189 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.197334 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.197501 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.197634 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.198023 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.198139 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.248475 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.248599 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.248684 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.248730 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.248836 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.248873 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.298996 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.299095 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.299159 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.299178 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.299216 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.299254 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.350154 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.350215 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.350260 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.350286 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.350343 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.350372 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.400789 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.400876 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.400964 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.401002 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.401078 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.401116 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.451374 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.451439 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.451471 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.451501 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.451563 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.451588 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.501844 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.501917 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.501970 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.501988 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.502069 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.502096 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.552678 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.552817 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.552868 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.552891 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.552946 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.552976 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.603781 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.603834 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.603860 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.603877 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.603913 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.603930 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.653882 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.653941 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.653969 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.653999 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.654037 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.654051 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.704271 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.704336 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.704362 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.704377 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.704412 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.704425 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.754723 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.754776 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.754809 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.754830 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.754876 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.754896 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.805463 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.805572 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.805653 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.805691 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.805820 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.805885 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.856271 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.856484 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.856589 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.856691 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.856763 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.856796 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.907024 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.907131 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.907252 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.907343 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.907617 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.907739 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
+127.0.0.1_29001 -> 17:10:44.958303 raft.go:623: Gestion: Tiempo latido TIMEOUT
+127.0.0.1_29001 -> 17:10:44.958371 raft.go:627: Gestion: Somos: LIDER - TimerLatido ha expirado
+127.0.0.1_29001 -> 17:10:44.958409 raft.go:528: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a enviar latidos
+127.0.0.1_29001 -> 17:10:44.958427 raft.go:538: Latir: Soy LIDER:  0  con mandato  30 y Log [{ 0} {escritura 30}]  y empiezo a envio latido a: 1
+127.0.0.1_29001 -> 17:10:44.958500 raft.go:489: PRUEBA: Bucle de caca con nextIndex:  2  y log:  [{ 0} {escritura 30}]
+127.0.0.1_29001 -> 17:10:44.958516 raft.go:494: enviarAppendEntries: valor de Entries:  [] con nextIndex:  2
