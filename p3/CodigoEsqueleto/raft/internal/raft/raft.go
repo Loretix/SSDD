@@ -275,6 +275,7 @@ type EstadoRemoto struct {
 }
 
 func (nr *NodoRaft) ObtenerEstadoNodo(args Vacio, reply *EstadoRemoto) error {
+	fmt.Println("Hemos llegadoa a la funcion ObtenerEstadoNodo")
 	reply.IdNodo, reply.Mandato, reply.EsLider, reply.IdLider = nr.obtenerEstado()
 	return nil
 }
@@ -415,7 +416,7 @@ type ArgAppendEntries struct {
 	Term         int          // Mandato del lider
 	LeaderId     int          // Id del lider, para que los sefuidores puedan redirigir al cliente en caso de que les haga una solicitud
 	PrevLogIndex int          // índice del último log realizado
-	PrevLogTerm  int          // mandato del lider en el que se realizo el último registro en log
+	PrevLogTerm  int          // valor del término apuntado por el PrevLogIndex
 	Entries      []RegistroOp // log del lider para los seguidores (empty for heartbeat; may send more than one for efficiency)
 	LeaderCommit int          // indice de la ultima entrada comprometida del lider
 }
@@ -491,10 +492,13 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 		args.Entries = append(args.Entries, nr.E.Log[nr.E.NextIndex[nodo]+i])
 	}
 	nr.Logger.Println("enviarAppendEntries: valor de Entries: ", args.Entries, "con nextIndex: ", nr.E.NextIndex[nodo])
+
+	err := nr.Nodos[nodo].CallTimeout("NodoRaft.AppendEntries", &args, &reply, time.Duration(25)*time.Millisecond)
 	nr.Mux.Unlock()
 	// enviamos al nodo que nos pasan por parámetro la petición y recibimos su respuesta
-	if nr.Nodos[nodo].CallTimeout("NodoRaft.AppendEntries", &args, &reply, time.Duration(25)*time.Millisecond) == nil {
+	if err == nil {
 		// si es == a nil es que no ha habido error y se ha recibido respuesta
+
 		if reply.Term > nr.E.CurrentTerm {
 			nr.ConvertirseEnSeguidor(reply.Term)
 		} else if !reply.Success {
@@ -502,6 +506,7 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 		} else { // La entrada se ha registrado el en Log correctamente
 			nr.Mux.Lock()
 			if args.Entries != nil {
+				args.Entries = nil
 				nr.NodosLogCorrecto++
 				nr.E.NextIndex[nodo]++
 				nr.E.MatchIndex[nodo]++

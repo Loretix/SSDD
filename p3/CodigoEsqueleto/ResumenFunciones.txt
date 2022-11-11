@@ -41,6 +41,8 @@ Campos existentes:
         Logger *log.Logger	    // Utilización opcional de este logger para depuración
         E Estado                // se define debajo
         Roll string             //  Roll (SEGUIDOR, LIDER, CANDIDATO)
+        VotosRecibidos int
+        NodosLogCorrecto int
         TimerEleccion *time.Timer 
         TimerLatido   *time.Timer 
 
@@ -133,7 +135,18 @@ Instruccinoes para ejecutar:
     -----------------------------------
 
     kill $(ps | grep main) & kill $(ps | grep main.go)
+    pkill main // para rematar
 
     -----------------------------------
 
-    go run pkg/cltraft/main.go 127.0.0.1:1230
+    go run pkg/cltraft/main.go 127.0.0.1:1230 127.0.0.1:1231
+
+    -----------------------------------
+    para entrar en labs sin contraseña:
+
+    ssh-keygen -t ed25519
+    ssh-copy-id -i ~/.ssh/ed25519.pub a799301@lab000.cps.unizar.es
+    ssh-copy-id -i ~/.ssh/id_rsa.pub a799301@155.210.154.201
+
+    /home/a799301/practicas/SSDD/p3/CodigoEsqueleto/raft/internal/raft
+
