@@ -9,12 +9,14 @@ import (
 	"raft/internal/comun/rpctimeout"
 	"raft/internal/raft"
 	"strconv"
-	"time"
+ "strings"
+  "time"
 )
 
 type NodoLE struct {
 	Nr *raft.NodoRaft
 }
+
 
 func (nodo *NodoLE) LecEsc(args *raft.TipoOperacion, reply *raft.ResultadoRemoto) error {
 	fmt.Println("Estoy en LecEsc")
@@ -26,11 +28,11 @@ func (nodo *NodoLE) LecEsc(args *raft.TipoOperacion, reply *raft.ResultadoRemoto
 	return nil
 }
 
-func conexionCliente(nodo *NodoLE, me int) {
+func conexionCliente(nodo *NodoLE, me int, ip string) {
 
 	// Parte Servidor
 	rpc.Register(nodo)
-	cliente, err := net.Listen("tcp", "localhost:123"+strconv.Itoa(me))
+	cliente, err := net.Listen("tcp", ip[:strings.Index(string(ip), ":")]+":300"+strconv.Itoa(me))
 	check.CheckError(err, "Error escuchando al cliente")
 	for {
 		conn, err := cliente.Accept()
@@ -61,6 +63,6 @@ func main() {
 
 	l, err := net.Listen("tcp", os.Args[2:][me])
 	check.CheckError(err, "Main listen error:")
-	go conexionCliente(nodo, me)
+	go conexionCliente(nodo, me, os.Args[2+me])
 	rpc.Accept(l)
 }

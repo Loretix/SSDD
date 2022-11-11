@@ -22,14 +22,14 @@ const (
 	/*MAQUINA1 = "127.0.0.1"
 	MAQUINA2 = "127.0.0.1"
 	MAQUINA3 = "127.0.0.1"*/
-	MAQUINA1 = "a799301@155.210.154.201"
-	MAQUINA2 = "a799301@155.210.154.202"
-	MAQUINA3 = "a799301@155.210.154.203"
+	MAQUINA1 = "a799301@155.210.154.206"
+	MAQUINA2 = "a799301@155.210.154.208"
+	MAQUINA3 = "a799301@155.210.154.205"
 
 	//puertos
-	PUERTOREPLICA1 = "29007"
-	PUERTOREPLICA2 = "29008"
-	PUERTOREPLICA3 = "29009"
+	PUERTOREPLICA1 = "29008"
+	PUERTOREPLICA2 = "29005"
+	PUERTOREPLICA3 = "29006"
 
 	//nodos replicas
 	REPLICA1 = MAQUINA1 + ":" + PUERTOREPLICA1
@@ -45,7 +45,7 @@ const (
 	// Ubicar, en esta constante, nombre de fichero de vuestra clave privada local
 	// emparejada con la clave pública en authorized_keys de máquinas remotas
 
-	PRIVKEYFILE = "ed25519"
+	PRIVKEYFILE = "id_rsa"
 )
 
 // PATH de los ejecutables de modulo golang de servicio Raft
@@ -171,16 +171,16 @@ func (cfg *configDespliegue) soloArranqueYparadaTest1(t *testing.T) {
 	cfg.startDistributedProcesses()
 
 	// Comprobar estado replica 0
-	//cfg.comprobarEstadoRemoto(0, 0, false, -1)
+	cfg.comprobarEstadoRemoto(0, 0, false, -1)
 
 	// Comprobar estado replica 1
-	//cfg.comprobarEstadoRemoto(1, 0, false, -1)
+	cfg.comprobarEstadoRemoto(1, 0, false, -1)
 
 	// Comprobar estado replica 2
-	//cfg.comprobarEstadoRemoto(2, 0, false, -1)
+	cfg.comprobarEstadoRemoto(2, 0, false, -1)
 
 	// Parar réplicas almacenamiento en remoto
-	//cfg.stopDistributedProcesses()
+	cfg.stopDistributedProcesses()
 
 	fmt.Println(".............", t.Name(), "Superado")
 }
@@ -332,7 +332,7 @@ func (cfg *configDespliegue) obtenerEstadoRemoto(
 // start  gestor de vistas; mapa de replicas y maquinas donde ubicarlos;
 // y lista clientes (host:puerto)
 func (cfg *configDespliegue) startDistributedProcesses() {
-	//cfg.t.Log("Before starting following distributed processes: ", cfg.nodosRaft)
+	cfg.t.Log("Before starting following distributed processes: ", cfg.nodosRaft)
 
 	for i, endPoint := range cfg.nodosRaft {
 		despliegue.ExecMutipleHosts(EXECREPLICACMD+
@@ -341,11 +341,11 @@ func (cfg *configDespliegue) startDistributedProcesses() {
 			[]string{endPoint.Host()}, cfg.cr, PRIVKEYFILE)
 
 		// dar tiempo para se establezcan las replicas
-		time.Sleep(500 * time.Millisecond)
+		time.Sleep(5000 * time.Millisecond)
 	}
 
 	// aproximadamente 500 ms para cada arranque por ssh en portatil
-	time.Sleep(2500 * time.Millisecond)
+	time.Sleep(5000 * time.Millisecond)
 }
 
 func (cfg *configDespliegue) stopDistributedProcesses() {

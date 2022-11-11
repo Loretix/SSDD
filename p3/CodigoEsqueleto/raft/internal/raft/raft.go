@@ -488,7 +488,7 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 	args.PrevLogTerm = nr.E.Log[args.PrevLogIndex].Mandato
 
 	for i := 0; i < len(nr.E.Log)-nr.E.NextIndex[nodo]; i++ {
-		nr.Logger.Println("log: ", nr.E.Log[nr.E.NextIndex[nodo]+i])
+		nr.Logger.Println("log: jjjjj", nr.E.Log[nr.E.NextIndex[nodo]+i])
 		args.Entries = append(args.Entries, nr.E.Log[nr.E.NextIndex[nodo]+i])
 	}
 	nr.Logger.Println("enviarAppendEntries: valor de Entries: ", args.Entries, "con nextIndex: ", nr.E.NextIndex[nodo])

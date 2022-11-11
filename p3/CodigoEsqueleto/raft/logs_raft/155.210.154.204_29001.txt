@@ -1,0 +1,603 @@
+155.210.154.204_29001 -> 04:35:57.559543 raft.go:176: logger initialized
+155.210.154.204_29001 -> 04:35:57.609795 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:57.741147 raft.go:615: Gestion: Tiempo eleccion TIMEOUT
+155.210.154.204_29001 -> 04:35:57.741155 raft.go:618: Gestion: Somos: SEGUIDOR - TimerEleccion ha expirado
+155.210.154.204_29001 -> 04:35:57.741158 raft.go:584: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+155.210.154.204_29001 -> 04:35:57.741162 raft.go:384: enviarPeticionVoto: procedo a enviar la peticion de voto
+155.210.154.204_29001 -> 04:35:57.741170 raft.go:388: enviarPeticionVoto: gano por mayoria 
+155.210.154.204_29001 -> 04:35:57.741172 raft.go:563: ConvertirseEnLider: Nos convertimos en LIDER
+155.210.154.204_29001 -> 04:35:57.741256 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:57.791412 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:57.791419 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:57.791424 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:57.841598 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:57.841605 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:57.841612 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:57.891726 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:57.891733 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:57.891740 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:57.941805 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:57.941812 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:57.941816 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:57.991897 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:57.991904 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:57.991909 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.041993 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.041999 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.042004 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.092120 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.092127 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.092131 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.142248 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.142257 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.142262 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.192345 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.192352 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.192357 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.242473 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.242480 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.242485 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.292660 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.292689 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.292697 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.342866 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.342872 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.342877 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.393061 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.393067 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.393074 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.443187 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.443194 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.443199 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.493320 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.493329 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.493334 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.543450 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.543457 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.543462 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.593577 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.593584 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.593589 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.643674 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.643680 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.643685 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.693800 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.693807 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.693811 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.743926 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.743933 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.743938 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.794019 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.794026 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.794030 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.844145 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.844151 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.844158 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.894299 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.894305 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.894313 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.944496 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.944504 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.944510 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:58.994695 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:58.994701 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:58.994708 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.044825 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.044832 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.044837 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.094943 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.094950 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.094955 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.145134 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.145140 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.145147 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.195255 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.195261 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.195266 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.245381 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.245387 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.245392 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.295508 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.295514 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.295523 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.345639 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.345661 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.345669 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.395787 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.395794 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.395801 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.445914 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.445921 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.445930 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.496110 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.496117 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.496122 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.546313 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.546319 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.546324 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.596521 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.596527 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.596532 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.646709 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.646715 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.646720 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.696838 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.696845 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.696850 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.746966 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.746972 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.746977 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.797094 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.797101 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.797106 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.847224 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.847231 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.847237 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.897351 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.897358 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.897367 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.947483 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.947493 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.947500 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:35:59.997615 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:35:59.997621 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:35:59.997628 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.047780 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.047790 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.047796 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.097878 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.097887 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.097896 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.147939 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.147945 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.147950 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.198049 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.198056 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.198067 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.248183 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.248191 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.248198 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.298286 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.298292 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.298297 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.348414 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.348421 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.348430 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.398546 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.398552 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.398562 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.448674 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.448681 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.448687 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.498799 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.498804 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.498809 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.548903 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.548910 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.548916 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.599027 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.599032 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.599036 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.649149 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.649154 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.649159 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.699273 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.699280 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.699287 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.749398 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.749405 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.749415 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.799506 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.799513 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.799519 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.849631 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.849636 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.849656 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.899728 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.899735 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.899742 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.949847 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.949851 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.949856 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:00.999949 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:00.999956 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:00.999963 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.050064 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.050069 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.050074 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.100214 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.100221 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.100228 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.150409 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.150416 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.150423 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.200562 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.200568 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.200576 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.250673 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.250680 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.250684 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.300800 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.300807 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.300811 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.350927 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.350933 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.350938 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.401054 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.401061 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.401066 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.451181 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.451187 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.451192 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.501307 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.501318 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.501323 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.551438 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.551445 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.551452 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.601565 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.601571 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.601575 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.651715 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.651721 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.651728 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.701841 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.701848 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.701853 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.751968 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.751975 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.751980 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.802096 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.802103 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.802108 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.852223 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.852233 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.852237 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.902344 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.902351 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.902355 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:01.952861 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:01.952874 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:01.952885 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.003008 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.003023 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.003031 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.053155 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.053172 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.053189 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.103349 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.103364 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.103376 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.153466 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.153488 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.153501 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.203693 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.203720 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.203730 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.253851 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.253866 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.253873 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.304006 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.304019 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.304027 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.354153 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.354167 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.354195 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.404371 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.404387 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.404399 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.454520 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.454536 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.454544 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.511694 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.511709 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.511716 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.561843 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.561858 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.561867 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.611993 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.612007 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.612015 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.662170 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.662186 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.662197 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.712397 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.712411 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.712418 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.762558 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.791934 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.791958 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.842102 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.842118 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.842126 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.892269 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.892283 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.892293 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.942553 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.942572 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.942584 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:02.992679 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:02.992694 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:02.992702 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.042807 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.042823 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.042831 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.092965 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.092980 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.092987 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.143146 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.143161 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.143172 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.193363 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.193378 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.193389 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.249772 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.249791 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.249804 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.300057 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.300071 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.300083 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.350243 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.350259 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.350274 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.400395 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.400435 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.400446 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.450575 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.450591 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.450602 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.500697 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.500734 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.500745 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.550895 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.550911 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.550923 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.601033 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.601041 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.601047 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.651151 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.651158 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.651164 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.701278 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.701284 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.701289 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.751404 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.751411 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.751416 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.801553 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.801559 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.801566 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.851673 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.851680 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.851701 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.901812 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.901817 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.901822 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:03.951983 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:03.951989 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:03.951995 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.002105 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.002109 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.002112 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.052225 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.052229 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.052233 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.102345 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.102349 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.102358 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.152472 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.152479 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.152486 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.202598 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.202605 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.202611 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.252783 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.252790 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.252796 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.302907 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.302912 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.302918 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.353032 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.353038 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.353045 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.403169 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.403173 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.403178 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.453298 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.453304 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.453311 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.503422 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.503426 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.503431 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.553578 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.553585 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.553592 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.603698 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.603703 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.603709 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.653838 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.653844 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.653851 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.703961 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.703983 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.703988 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.754122 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.754128 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.754142 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.804253 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.804258 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.804263 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.854410 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.854416 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.854422 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.904534 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.904538 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.904543 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:04.954676 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:04.954682 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:04.954688 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.004800 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.004806 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.004812 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.054942 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.054951 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.054958 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.105070 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.105076 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.105082 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.155242 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.155262 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.155268 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.205378 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.205383 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.205388 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.255534 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.255541 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.255547 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.305633 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.305644 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.305651 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.355744 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.355766 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.355772 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.405884 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.405889 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.405901 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.456014 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.456019 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.456023 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.506138 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.506143 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.506149 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.556264 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.556271 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.556276 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.606393 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.606401 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.606408 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.656505 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.656511 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.656516 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.706636 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.706643 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.706649 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.756763 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.756769 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.756773 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.806920 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.806927 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.806933 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.857080 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.857086 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.857093 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.907206 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.907212 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.907217 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:05.957332 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:05.957339 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:05.957343 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.007459 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.007466 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.007470 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.057625 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.057636 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.057644 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.107732 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.107738 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.107743 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.157893 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.157899 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.157904 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.208053 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.208059 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.208064 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.258211 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.258218 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.258222 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.308372 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.308379 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.308385 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.358525 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.358531 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.358536 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.408618 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.408630 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.408636 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.458727 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.458733 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.458738 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.508852 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.508857 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.508861 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.558979 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.558983 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.558986 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.609099 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.609104 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.609109 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.659223 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.659229 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.659235 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.709408 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.709415 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.709422 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.759532 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.759540 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.759544 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.809656 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.809661 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.809671 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.859791 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.859798 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.859804 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.909915 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.909920 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.909924 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:06.960038 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:06.960043 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:06.960049 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.010179 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.010186 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.010193 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.060308 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.060313 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.060317 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.110430 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.110435 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.110449 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.160555 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.160562 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.160569 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.210671 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.210675 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.210680 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.260799 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.260806 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.260813 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.310924 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.310929 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.310934 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.361064 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.361069 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.361073 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.411221 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.411225 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.411231 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.461341 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.461347 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.461354 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.511407 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.511412 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.511417 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.561571 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.561578 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.561585 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.611672 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.611676 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.611680 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.661793 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.661800 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.661808 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+155.210.154.204_29001 -> 04:36:07.711919 raft.go:626: Gestion: Tiempo latido TIMEOUT
+155.210.154.204_29001 -> 04:36:07.711923 raft.go:630: Gestion: Somos: LIDER - TimerLatido ha expirado
+155.210.154.204_29001 -> 04:36:07.711927 raft.go:531: Latir: Soy LIDER:  0  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
