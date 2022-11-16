@@ -9,23 +9,23 @@ import (
 	"raft/internal/comun/rpctimeout"
 	"raft/internal/raft"
 	"strconv"
- "strings"
-  "time"
+	"strings"
+	"time"
 )
 
 type NodoLE struct {
 	Nr *raft.NodoRaft
 }
 
-
 func (nodo *NodoLE) LecEsc(args *raft.TipoOperacion, reply *raft.ResultadoRemoto) error {
-	fmt.Println("Estoy en LecEsc")
 	if nodo.Nr.Roll == raft.LIDER {
+		fmt.Println("Estoy en LecEsc")
 		reply.ValorADevolver = args.Valor
 		nodo.Nr.SometerOperacionRaft(*args, reply)
-
+		return nil
 	}
-	return nil
+	err := fmt.Errorf("No es lider\n")
+	return err
 }
 
 func conexionCliente(nodo *NodoLE, me int, ip string) {

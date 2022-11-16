@@ -182,7 +182,7 @@ func NuevoNodo(nodos []rpctimeout.HostPort, yo int,
 	nr.VotosRecibidos = 0
 	nr.NodosLogCorrecto = 1
 	// enviara el primer latido en un nº aleatorio entre 50 y 200 ms
-	nr.TimerEleccion = time.NewTimer(time.Duration(rand.Intn(50)+150) * time.Millisecond)
+	nr.TimerEleccion = time.NewTimer(time.Duration(rand.Intn(60)+150) * time.Millisecond)
 	nr.TimerLatido = time.NewTimer(50 * time.Millisecond)
 	// Lanzamos la gorutina de gestion para controlar los timeouts
 	go nr.Gestion()
@@ -386,7 +386,7 @@ func (nr *NodoRaft) enviarPeticionVoto(nodo int, args *ArgsPeticionVoto,
 	if nodo == nr.Yo {
 		if nr.VotosRecibidos > (len(nr.Nodos) / 2) {
 			nr.Logger.Println("enviarPeticionVoto: gano por mayoria ")
-			nr.ConvertirseEnLider() // incluye enviar latido
+			nr.ConvertirseEnLider(args.LastLogIndex) // incluye enviar latido
 		}
 	} else if nr.Nodos[nodo].CallTimeout("NodoRaft.PedirVoto", &args, &reply, time.Duration(25)*time.Millisecond) == nil {
 		// enviamos al nodo que nos pasan por parámetro la petición y recibimos su respuesta
@@ -401,7 +401,7 @@ func (nr *NodoRaft) enviarPeticionVoto(nodo int, args *ArgsPeticionVoto,
 			// Si tenemos la mayoria de votos nos convertimos en lider
 			if (nr.VotosRecibidos > (len(nr.Nodos) / 2)) && nr.Roll == CANDIDATO {
 				nr.Logger.Println("enviarPeticionVoto: gano por mayoria ")
-				nr.ConvertirseEnLider() // incluye enviar latido
+				nr.ConvertirseEnLider(args.LastLogIndex) // incluye enviar latido
 			}
 		}
 		return true
@@ -414,7 +414,7 @@ func (nr *NodoRaft) enviarPeticionVoto(nodo int, args *ArgsPeticionVoto,
 // Lo envia el lider a los seguidores, puede ser solo un latido, o la petición de un cliente
 type ArgAppendEntries struct {
 	Term         int          // Mandato del lider
-	LeaderId     int          // Id del lider, para que los sefuidores puedan redirigir al cliente en caso de que les haga una solicitud
+	LeaderId     int          // Id del lider, para que los seguidores puedan redirigir al cliente en caso de que les haga una solicitud
 	PrevLogIndex int          // índice del último log realizado
 	PrevLogTerm  int          // valor del término apuntado por el PrevLogIndex
 	Entries      []RegistroOp // log del lider para los seguidores (empty for heartbeat; may send more than one for efficiency)
@@ -433,7 +433,7 @@ func (nr *NodoRaft) AppendEntries(args *ArgAppendEntries,
 
 	nr.Logger.Println("AppendEntries: recibido latido del lider: ", args.LeaderId, "con mandato", args.Term, " y Entries: ", args.Entries, " LastApplied: ", nr.E.LastApplied)
 
-	nr.TimerEleccion.Reset(time.Duration(rand.Intn(50)+150) * time.Millisecond) // reseteamos tiempo de timeout para el latido
+	nr.TimerEleccion.Reset(time.Duration(rand.Intn(60)+150) * time.Millisecond) // reseteamos tiempo de timeout para el latido
 	results.Success = true
 	results.Term = nr.E.CurrentTerm
 	nr.Mux.Unlock()
@@ -486,7 +486,7 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 	args.LeaderCommit = nr.E.CommitIndex
 	args.PrevLogIndex = nr.E.NextIndex[nodo] - 1
 	args.PrevLogTerm = nr.E.Log[args.PrevLogIndex].Mandato
-
+	args.Entries = nil
 	for i := 0; i < len(nr.E.Log)-nr.E.NextIndex[nodo]; i++ {
 		nr.Logger.Println("log: jjjjj", nr.E.Log[nr.E.NextIndex[nodo]+i])
 		args.Entries = append(args.Entries, nr.E.Log[nr.E.NextIndex[nodo]+i])
@@ -503,6 +503,7 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 			nr.ConvertirseEnSeguidor(reply.Term)
 		} else if !reply.Success {
 			// es false por tanto no se ha comprometido la entrada se trata el caso
+
 		} else { // La entrada se ha registrado el en Log correctamente
 			nr.Mux.Lock()
 			if args.Entries != nil {
@@ -538,7 +539,7 @@ func (nr *NodoRaft) Latir() {
 
 	for j := 0; j < len(nr.Nodos); j++ {
 		if j != nr.Yo {
-			nr.Logger.Println("Latir: Soy LIDER: ", nr.Yo, " con mandato ", nr.E.CurrentTerm, "y Log", nr.E.Log, " y empiezo a envio latido a:", j)
+			nr.Logger.Println("Latir: Soy LIDER: ", nr.Yo, " con mandato ", nr.E.CurrentTerm, "y Log", nr.E.Log, " y empiezo a enviar latido a:", j)
 			go nr.enviarAppendEntries(j, &args, &reply)
 		}
 	}
@@ -553,13 +554,13 @@ func (nr *NodoRaft) ConvertirseEnSeguidor(mandato int) {
 	nr.E.CurrentTerm = mandato
 	nr.E.VotedFor = -1
 	// tiempo aleatorio entre 50 y 200 milisegundos
-	tiempo := time.Duration(rand.Intn(50)+150) * time.Millisecond
+	tiempo := time.Duration(rand.Intn(60)+150) * time.Millisecond
 	nr.TimerEleccion.Reset(tiempo)
 	nr.TimerLatido.Stop()
 	nr.Mux.Unlock()
 }
 
-func (nr *NodoRaft) ConvertirseEnLider() {
+func (nr *NodoRaft) ConvertirseEnLider(lastLogIndex int) {
 	nr.Logger.Println("ConvertirseEnLider: Nos convertimos en LIDER")
 	nr.Mux.Lock()
 	// gestion de timers
@@ -568,10 +569,12 @@ func (nr *NodoRaft) ConvertirseEnLider() {
 	nr.Roll = LIDER
 	nr.IdLider = nr.Yo
 	// Inicializar nextIndex
+	nr.E.NextIndex = nil
 	for i := 0; i < len(nr.Nodos); i++ {
-		nr.E.NextIndex = append(nr.E.NextIndex, nr.E.LastApplied+1)
+		nr.E.NextIndex = append(nr.E.NextIndex, lastLogIndex+1)
 	}
 	// Inicializar matchIndex
+	nr.E.MatchIndex = nil
 	for i := 0; i < len(nr.Nodos); i++ {
 		nr.E.MatchIndex = append(nr.E.MatchIndex, 0)
 	}
@@ -601,7 +604,7 @@ func (nr *NodoRaft) ConvertirseEnCandidato() {
 	}
 	nr.Mux.Lock()
 	// gestion de los timers para comenzar una nueva eleccion si es necesario
-	tiempo := time.Duration(rand.Intn(50)+150) * time.Millisecond
+	tiempo := time.Duration(rand.Intn(60)+150) * time.Millisecond
 	nr.TimerEleccion.Reset(tiempo)
 	nr.Mux.Unlock()
 }
