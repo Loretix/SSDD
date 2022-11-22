@@ -521,7 +521,9 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 		} else if !reply.Success {
 			// es false por tanto no se ha comprometido la entrada se trata el caso
 			nr.Mux.Lock()
-			nr.E.NextIndex[nodo]--
+			if nr.E.NextIndex[nodo] != 0 {
+				nr.E.NextIndex[nodo]--
+			}
 			nr.Mux.Unlock()
 			nr.enviarAppendEntries(nodo, args, reply)
 
