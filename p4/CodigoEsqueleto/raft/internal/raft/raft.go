@@ -520,11 +520,11 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 			nr.ConvertirseEnSeguidor(reply.Term)
 		} else if !reply.Success {
 			// es false por tanto no se ha comprometido la entrada se trata el caso
-			// motivos por los que no se ha compromotido una entrada:
-			// 				motivo 1: el Log del servidor era mas chiquito y le faltan entradas
-			// 					solución: enviarle nuestro Log completo
-			// 				motivos dos: esta actualizado peero no coincide el dato (mandato)
-			// 					creemos que también enviar el Log completo
+			nr.Mux.Lock()
+			nr.E.NextIndex[nodo]--
+			nr.Mux.Unlock()
+			nr.enviarAppendEntries(nodo, args, reply)
+
 		} else { // La entrada se ha registrado el en Log correctamente
 			nr.Mux.Lock()
 			if args.Entries != nil {

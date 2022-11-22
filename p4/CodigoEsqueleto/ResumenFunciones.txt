@@ -149,4 +149,7 @@ Instruccinoes para ejecutar:
     ssh-copy-id -i ~/.ssh/id_rsa.pub a799301@155.210.154.201
 
     /home/a799301/practicas/SSDD/p3/CodigoEsqueleto/raft/internal/raft
+    Prueba en local: 
+    cd /home/ayelen/Uni/GitHub/SSDD/p4/CodigoEsqueleto/raft
+
 

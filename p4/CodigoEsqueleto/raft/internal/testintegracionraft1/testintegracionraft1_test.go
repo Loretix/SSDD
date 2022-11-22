@@ -33,9 +33,15 @@ const (
 	PUERTOREPLICA3 = "29006"
 
 	//nodos replicas
-	REPLICA1 = MAQUINA1 + ":" + PUERTOREPLICA1
-	REPLICA2 = MAQUINA2 + ":" + PUERTOREPLICA2
-	REPLICA3 = MAQUINA3 + ":" + PUERTOREPLICA3
+	/*
+		REPLICA1 = MAQUINA1 + ":" + PUERTOREPLICA1
+		REPLICA2 = MAQUINA2 + ":" + PUERTOREPLICA2
+		REPLICA3 = MAQUINA3 + ":" + PUERTOREPLICA3
+	*/
+
+	REPLICA1 = MAQUINA_LOCAL + ":" + PUERTOREPLICA1
+	REPLICA2 = MAQUINA_LOCAL + ":" + PUERTOREPLICA2
+	REPLICA3 = MAQUINA_LOCAL + ":" + PUERTOREPLICA3
 
 	// paquete main de ejecutables relativos a PATH previo
 	EXECREPLICA = "cmd/srvraft/main.go"
@@ -50,10 +56,12 @@ const (
 )
 
 // PATH de los ejecutables de modulo golang de servicio Raft
-var PATH string = "/home/a799301/practicas/SSDD/p3/CodigoEsqueleto/raft"
+// var PATH string = "/home/a799301/practicas/SSDD/p3/CodigoEsqueleto/raft"
+var PATH string = "/home/ayelen/Uni/GitHub/SSDD/p4/CodigoEsqueleto/raft"
 
 // go run cmd/srvraft/main.go 0 127.0.0.1:29001 127.0.0.1:29002 127.0.0.1:29003
-var EXECREPLICACMD string = "cd " + PATH + "; /usr/local/go/bin/go run " + EXECREPLICA
+// var EXECREPLICACMD string = "cd " + PATH + "; /usr/local/go/bin/go run " + EXECREPLICA
+var EXECREPLICACMD string = "cd " + PATH + "; go run " + EXECREPLICA
 
 // TEST primer rango
 func TestPrimerasPruebas(t *testing.T) { // (m *testing.M) {
@@ -71,9 +79,9 @@ func TestPrimerasPruebas(t *testing.T) { // (m *testing.M) {
 	// Run test sequence
 
 	// Test1 : No debería haber ningun primario, si SV no ha recibido aún latidos
-	/*t.Run("T1:soloArranqueYparada",
-	func(t *testing.T) { cfg.soloArranqueYparadaTest1(t) })
-	*/
+	t.Run("T1:soloArranqueYparada",
+		func(t *testing.T) { cfg.soloArranqueYparadaTest1(t) })
+
 	// Test2 : No debería haber ningun primario, si SV no ha recibido aún latidos
 	t.Run("T2:ElegirPrimerLider",
 		func(t *testing.T) { cfg.elegirPrimerLiderTest2(t) })
@@ -171,16 +179,16 @@ func (cfg *configDespliegue) soloArranqueYparadaTest1(t *testing.T) {
 	cfg.t = t // Actualizar la estructura de datos de tests para errores
 
 	// Poner en marcha replicas en remoto con un tiempo de espera incluido
-	cfg.startDistributedProcesses()
+	//cfg.startDistributedProcesses()
 
 	// Comprobar estado replica 0
-	cfg.comprobarEstadoRemoto(0, 0, false, 0)
+	cfg.comprobarEstadoRemoto(0, 0, false, -1)
 
 	// Comprobar estado replica 1
-	cfg.comprobarEstadoRemoto(1, 0, false, 0)
+	cfg.comprobarEstadoRemoto(1, 0, false, -1)
 
 	// Comprobar estado replica 2
-	cfg.comprobarEstadoRemoto(2, 0, false, 0)
+	cfg.comprobarEstadoRemoto(2, 0, false, -1)
 
 	// Parar réplicas almacenamiento en remoto
 	cfg.stopDistributedProcesses()
@@ -208,7 +216,7 @@ func (cfg *configDespliegue) elegirPrimerLiderTest2(t *testing.T) {
 
 // Fallo de un primer lider y reeleccion de uno nuevo - 3 NODOS RAFT
 func (cfg *configDespliegue) falloAnteriorElegirNuevoLiderTest3(t *testing.T) {
-	t.Skip("SKIPPED FalloAnteriorElegirNuevoLiderTest3")
+	//t.Skip("SKIPPED FalloAnteriorElegirNuevoLiderTest3")
 
 	fmt.Println(t.Name(), ".....................")
 
@@ -344,7 +352,26 @@ func (cfg *configDespliegue) startDistributedProcesses() {
 			[]string{endPoint.Host()}, cfg.cr, PRIVKEYFILE)
 
 		// dar tiempo para se establezcan las replicas
-		//time.Sleep(5000 * time.Millisecond)
+		time.Sleep(5000 * time.Millisecond)
+	}
+
+	// aproximadamente 500 ms para cada arranque por ssh en portatil
+	time.Sleep(4000 * time.Millisecond)
+}
+
+// start  gestor de vistas; mapa de replicas y maquinas donde ubicarlos;
+// y lista clientes (host:puerto)
+func (cfg *configDespliegue) startLocalProccess() {
+	//cfg.t.Log("Before starting following distributed processes: ", cfg.nodosRaft)
+
+	for i, endPoint := range cfg.nodosRaft {
+		despliegue.ExecMutipleHosts(EXECREPLICACMD+
+			" "+strconv.Itoa(i)+" "+
+			rpctimeout.HostPortArrayToString(cfg.nodosRaft),
+			[]string{endPoint.Host()}, cfg.cr, PRIVKEYFILE)
+
+		// dar tiempo para se establezcan las replicas
+		time.Sleep(5000 * time.Millisecond)
 	}
 
 	// aproximadamente 500 ms para cada arranque por ssh en portatil
