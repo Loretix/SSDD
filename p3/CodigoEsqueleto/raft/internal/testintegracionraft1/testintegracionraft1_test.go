@@ -71,9 +71,9 @@ func TestPrimerasPruebas(t *testing.T) { // (m *testing.M) {
 	// Run test sequence
 
 	// Test1 : No debería haber ningun primario, si SV no ha recibido aún latidos
-	/*t.Run("T1:soloArranqueYparada",
+	t.Run("T1:soloArranqueYparada",
 	func(t *testing.T) { cfg.soloArranqueYparadaTest1(t) })
-	*/
+
 	// Test2 : No debería haber ningun primario, si SV no ha recibido aún latidos
 	t.Run("T2:ElegirPrimerLider",
 		func(t *testing.T) { cfg.elegirPrimerLiderTest2(t) })
@@ -174,13 +174,13 @@ func (cfg *configDespliegue) soloArranqueYparadaTest1(t *testing.T) {
 	cfg.startDistributedProcesses()
 
 	// Comprobar estado replica 0
-	cfg.comprobarEstadoRemoto(0, 0, false, 0)
+	cfg.comprobarEstadoRemoto(0, 0, false, -1)
 
 	// Comprobar estado replica 1
-	cfg.comprobarEstadoRemoto(1, 0, false, 0)
+	cfg.comprobarEstadoRemoto(1, 0, false, -1)
 
 	// Comprobar estado replica 2
-	cfg.comprobarEstadoRemoto(2, 0, false, 0)
+	cfg.comprobarEstadoRemoto(2, 0, false, -1)
 
 	// Parar réplicas almacenamiento en remoto
 	cfg.stopDistributedProcesses()
@@ -208,7 +208,7 @@ func (cfg *configDespliegue) elegirPrimerLiderTest2(t *testing.T) {
 
 // Fallo de un primer lider y reeleccion de uno nuevo - 3 NODOS RAFT
 func (cfg *configDespliegue) falloAnteriorElegirNuevoLiderTest3(t *testing.T) {
-	t.Skip("SKIPPED FalloAnteriorElegirNuevoLiderTest3")
+	//t.Skip("SKIPPED FalloAnteriorElegirNuevoLiderTest3")
 
 	fmt.Println(t.Name(), ".....................")
 
@@ -344,7 +344,7 @@ func (cfg *configDespliegue) startDistributedProcesses() {
 			[]string{endPoint.Host()}, cfg.cr, PRIVKEYFILE)
 
 		// dar tiempo para se establezcan las replicas
-		//time.Sleep(5000 * time.Millisecond)
+		time.Sleep(5000 * time.Millisecond)
 	}
 
 	// aproximadamente 500 ms para cada arranque por ssh en portatil
