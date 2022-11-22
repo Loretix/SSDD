@@ -110,11 +110,10 @@ type NodoRaft struct {
 	// contador de votos en caso de ser candidato
 	VotosRecibidos int
 
-	// cuenta el numero de nodos que guardan la entrada
-	NodosLogCorrecto int
-
+	//Canal Aplicacion
+	CanalAplicaOp chan AplicaOperacion
 	// Maquina de estados
-	MaquinaEstados map[string]string
+	MaquinaEstados map[int]string
 
 	TimerEleccion *time.Timer
 	TimerLatido   *time.Timer
@@ -153,7 +152,7 @@ func NuevoNodo(nodos []rpctimeout.HostPort, yo int,
 	nr.Nodos = nodos
 	nr.Yo = yo
 	nr.IdLider = -1
-
+	nr.CanalAplicaOp = canalAplicarOperacion
 	if kEnableDebugLogs {
 		nombreNodo := nodos[nr.Yo].Host() + "_" + nodos[yo].Port()
 		logPrefix := fmt.Sprintf("%s", nombreNodo)
@@ -185,7 +184,6 @@ func NuevoNodo(nodos []rpctimeout.HostPort, yo int,
 
 	inicializarEstado(nr)
 	nr.VotosRecibidos = 0
-	nr.NodosLogCorrecto = 1
 	// enviara el primer latido en un nº aleatorio entre 50 y 200 ms
 	nr.TimerEleccion = time.NewTimer(time.Duration(rand.Intn(60)+150) * time.Millisecond)
 	nr.TimerLatido = time.NewTimer(50 * time.Millisecond)
@@ -250,8 +248,6 @@ func (nr *NodoRaft) someterOperacion(operacion TipoOperacion) (int, int,
 		nr.Logger.Println("SometerOperacion: nuevo log ", nr.E.Log)
 
 		valorADevolver = operacion.Valor // Devolvemos valor leido en caso de q exista
-		indice = indice + 1
-		nr.E.LastApplied = indice // actualizamos el índice, pq hemos añadido una entrada
 	}
 	nr.Mux.Unlock()
 	return indice, mandato, EsLider, idLider, valorADevolver
@@ -467,7 +463,7 @@ func (nr *NodoRaft) AppendEntries(args *ArgAppendEntries,
 		// 3. Si una entrada existente entra en conflicto con una nueva (mismo índice seguidor
 		// pero términos diferentes), elimine la entrada existente y todo lo que le sigue
 		nr.E.Log = append(nr.E.Log[:(args.PrevLogIndex + 1)])
-
+		nr.E.LastApplied = len(nr.E.Log) - 1
 		// 4. Annadir entradas nuevas que aun no esten en el registro
 		if args.Entries != nil {
 			var i int
@@ -531,16 +527,27 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 			nr.Mux.Lock()
 			if args.Entries != nil {
 				args.Entries = nil
-				nr.NodosLogCorrecto++
 				nr.E.NextIndex[nodo]++
-				nr.E.MatchIndex[nodo]++
-				if nr.NodosLogCorrecto > len(nr.Nodos)/2 {
-					// comprometemos la entrada ya que tenemos mayoria
-					nr.NodosLogCorrecto = 1
-					nr.E.CommitIndex = args.PrevLogIndex + 1
-					nr.Logger.Println("enviarAppendEntries: entrada comprometida con CommitIndex= ",
-						nr.E.CommitIndex, " NextIndex= ", nr.E.NextIndex[nodo], " MatchIndex= ", nr.E.MatchIndex[nodo])
+				nr.E.MatchIndex[nodo] = nr.E.NextIndex[nodo] - 1
+				// nr.E.CommitIndex + 1 es la última entrada sin comprometer
+				for N := nr.E.CommitIndex + 1; N < len(nr.E.Log); N++ {
+					NodosLogCorrecto := 1 // se inicializa a 1 pq ya tienes tu voto
+
+					for i := 0; i < len(nr.Nodos); i++ {
+						if nr.E.MatchIndex[i] >= N {
+							NodosLogCorrecto++
+						}
+					}
+
+					// una vez que hemos comprobado si los nodos suficientes tienen
+					if NodosLogCorrecto > len(nr.Nodos)/2 && nr.E.Log[N].Mandato == nr.E.CurrentTerm {
+						// comprometemos la entrada ya que tenemos mayoria
+						nr.E.CommitIndex = N
+						nr.Logger.Println("enviarAppendEntries: entrada comprometida con CommitIndex= ",
+							nr.E.CommitIndex, " NextIndex= ", nr.E.NextIndex[nodo], " MatchIndex= ", nr.E.MatchIndex[nodo])
+					}
 				}
+
 			}
 
 			nr.Mux.Unlock()
@@ -556,10 +563,6 @@ func (nr *NodoRaft) Latir() {
 	var reply Results
 	var args ArgAppendEntries
 	// enviar RPC de AppendEntries vacios iniciales
-	nr.Mux.Lock()
-	nr.NodosLogCorrecto = 1
-	nr.Mux.Unlock()
-
 	for j := 0; j < len(nr.Nodos); j++ {
 		if j != nr.Yo {
 			nr.Logger.Println("Latir: Soy LIDER: ", nr.Yo, " con mandato ", nr.E.CurrentTerm, "y Log", nr.E.Log, " y empiezo a enviar latido a:", j)
