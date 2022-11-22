@@ -28,6 +28,7 @@ import (
 	"log"
 	"math/rand"
 	"os"
+	"strconv"
 
 	//"crypto/rand"
 	"sync"
@@ -112,8 +113,8 @@ type NodoRaft struct {
 
 	//Canal Aplicacion
 	CanalAplicaOp chan AplicaOperacion
-	// Maquina de estados
-	MaquinaEstados map[int]string
+	// Almacen de datos
+	AlmacenDeDatos map[int]string
 
 	TimerEleccion *time.Timer
 	TimerLatido   *time.Timer
@@ -180,7 +181,7 @@ func NuevoNodo(nodos []rpctimeout.HostPort, yo int,
 		nr.Logger = log.New(ioutil.Discard, "", 0)
 	}
 	// Maquina de estados
-	nr.MaquinaEstados = make(map[string]string)
+	nr.AlmacenDeDatos = make(map[int]string)
 
 	inicializarEstado(nr)
 	nr.VotosRecibidos = 0
@@ -189,6 +190,7 @@ func NuevoNodo(nodos []rpctimeout.HostPort, yo int,
 	nr.TimerLatido = time.NewTimer(50 * time.Millisecond)
 	// Lanzamos la gorutina de gestion para controlar los timeouts
 	go nr.Gestion()
+	go nr.gestionALmacenDatos()
 	return nr
 }
 
@@ -476,13 +478,20 @@ func (nr *NodoRaft) AppendEntries(args *ArgAppendEntries,
 		}
 		// 5. Si leaderCommit > commitIndex, commitIndex = min(leaderCommit, indice de la ultima entrada nueva)
 		if args.LeaderCommit > nr.E.CommitIndex {
+			init := nr.E.CommitIndex + 1
 			if args.LeaderCommit < nr.E.LastApplied {
 				nr.E.CommitIndex = args.LeaderCommit
 			} else {
 				nr.E.CommitIndex = nr.E.LastApplied
 			}
 			nr.Logger.Println("AppendEntries: Soy servidor y he comprometido mi entrada ", nr.E.CommitIndex)
+			// Guardamos en el almacen los nuevos datos
+			for i := init; i <= nr.E.CommitIndex; i++ {
+				nr.actualizarAlmacen(i)
+			}
+
 		}
+
 		nr.Mux.Unlock()
 	}
 
@@ -543,6 +552,7 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 					if NodosLogCorrecto > len(nr.Nodos)/2 && nr.E.Log[N].Mandato == nr.E.CurrentTerm {
 						// comprometemos la entrada ya que tenemos mayoria
 						nr.E.CommitIndex = N
+						nr.actualizarAlmacen(N)
 						nr.Logger.Println("enviarAppendEntries: entrada comprometida con CommitIndex= ",
 							nr.E.CommitIndex, " NextIndex= ", nr.E.NextIndex[nodo], " MatchIndex= ", nr.E.MatchIndex[nodo])
 					}
@@ -556,6 +566,16 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 	}
 
 	return false
+}
+
+func (nr *NodoRaft) actualizarAlmacen(VClave int) {
+	// preparamos los datos para introducirlos en el almacen de datos
+	var aux AplicaOperacion
+	aux.Operacion.Valor = strconv.Itoa(nr.E.Log[VClave].Mandato)
+	aux.Operacion.Operacion = nr.E.Log[VClave].Comando
+	aux.Operacion.Clave = VClave
+	// enviamos por el canal los datos
+	nr.CanalAplicaOp <- aux
 }
 
 func (nr *NodoRaft) Latir() {
@@ -669,6 +689,20 @@ func (nr *NodoRaft) Gestion() {
 				nr.Mux.Unlock()
 				nr.Latir()
 			}
+		}
+	}
+}
+
+// ------------------------------- funcion gestion almacen de datos --------------------------------------------//
+
+func (nr *NodoRaft) gestionALmacenDatos() {
+	for {
+		Dato := <-nr.CanalAplicaOp
+		if Dato.Operacion.Operacion == "escritura" {
+			nr.AlmacenDeDatos[Dato.Operacion.Clave] = Dato.Operacion.Valor
+			nr.Logger.Println("gestionALmacenDatos: Almacenamos un nuevo valor", nr.AlmacenDeDatos)
+		} else if Dato.Operacion.Operacion == "lectura" { // la op es leer
+			nr.Logger.Println("gestionALmacenDatos: Hemos leido el almacen", nr.AlmacenDeDatos)
 		}
 	}
 }
