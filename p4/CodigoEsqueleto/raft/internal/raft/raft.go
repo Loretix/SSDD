@@ -296,6 +296,24 @@ func (nr *NodoRaft) SometerOperacionRaft(operacion TipoOperacion,
 	return nil
 }
 
+type EntradasComprometidas struct {
+	Comprometidas int
+	Mandato       int
+}
+
+func (nr *NodoRaft) NumEntradasComprometidas(args Vacio, reply *EntradasComprometidas) {
+	reply.Comprometidas = nr.E.CommitIndex
+	reply.Mandato = nr.E.CurrentTerm
+}
+
+type EntradasSinComprometer struct {
+	SinComprometer int
+}
+
+func (nr *NodoRaft) NumEntradasSinComprometer(args Vacio, reply *EntradasSinComprometer) {
+	reply.SinComprometer = len(nr.E.Log) - nr.E.CommitIndex
+}
+
 // ------------------------------- funciones pedirVoto -------------------------------------------------//
 
 // -----------------------------------------------------------------------
@@ -538,7 +556,6 @@ func (nr *NodoRaft) enviarAppendEntries(nodo int, args *ArgAppendEntries,
 				args.Entries = nil
 				nr.E.NextIndex[nodo]++
 				nr.E.MatchIndex[nodo] = nr.E.NextIndex[nodo] - 1
-				// nr.E.CommitIndex + 1 es la última entrada sin comprometer
 				for N := nr.E.CommitIndex + 1; N < len(nr.E.Log); N++ {
 					NodosLogCorrecto := 1 // se inicializa a 1 pq ya tienes tu voto
 
