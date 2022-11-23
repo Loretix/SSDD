@@ -23,9 +23,9 @@ const (
 	MAQUINA2 = "127.0.0.1"
 	MAQUINA3 = "127.0.0.1"*/
 	MAQUINA_LOCAL = "127.0.0.1"
-	MAQUINA1      = "155.210.154.206"
+	MAQUINA1      = "155.210.154.201"
 	MAQUINA2      = "155.210.154.191"
-	MAQUINA3      = "155.210.154.209"
+	MAQUINA3      = "155.210.154.208"
 
 	//puertos
 	PUERTOREPLICA1 = "29008"
@@ -46,7 +46,7 @@ const (
 	// Ubicar, en esta constante, nombre de fichero de vuestra clave privada local
 	// emparejada con la clave pública en authorized_keys de máquinas remotas
 
-	PRIVKEYFILE = "id_rsa"
+	PRIVKEYFILE = "id_ed25519"
 )
 
 // PATH de los ejecutables de modulo golang de servicio Raft
@@ -380,7 +380,7 @@ func (cfg *configDespliegue) obtenerEstadoRemoto(
 	indiceNodo int) (int, int, bool, int, error) {
 	var reply raft.EstadoRemoto
 	err := cfg.nodosRaft[indiceNodo].CallTimeout("NodoRaft.ObtenerEstadoNodo",
-		raft.Vacio{}, &reply, 20*time.Millisecond)
+		raft.Vacio{}, &reply, 2000*time.Millisecond)
 	//fmt.Println(cfg.nodosRaft[indiceNodo])
 	check.CheckError(err, "Error en llamada RPC ObtenerEstadoRemoto")
 
@@ -399,11 +399,11 @@ func (cfg *configDespliegue) startDistributedProcesses() {
 			[]string{endPoint.Host()}, cfg.cr, PRIVKEYFILE)
 
 		// dar tiempo para se establezcan las replicas
-		time.Sleep(10000 * time.Millisecond)
+		time.Sleep(40000 * time.Millisecond)
 	}
 
 	// aproximadamente 500 ms para cada arranque por ssh en portatil
-	time.Sleep(4000 * time.Millisecond)
+	time.Sleep(5000 * time.Millisecond)
 }
 
 func (cfg *configDespliegue) stopDistributedProcesses() {
@@ -419,8 +419,7 @@ func (cfg *configDespliegue) stopDistributedProcesses() {
 // Comprobar estado remoto de un nodo con respecto a un estado prefijado
 func (cfg *configDespliegue) comprobarEstadoRemoto(idNodoDeseado int,
 	mandatoDeseado int, esLiderDeseado bool, IdLiderDeseado int) {
-	idNodo, _, esLider, idLider, err := cfg.obtenerEstadoRemoto(idNodoDeseado)
-	check.CheckError(err, "Error en llamada RPC ObtenerEstadoRemoto")
+	idNodo, _, esLider, idLider, _ := cfg.obtenerEstadoRemoto(idNodoDeseado)
 
 	fmt.Println("Estado replica ", idNodoDeseado, idNodo, esLider, idLider)
 
