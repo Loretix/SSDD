@@ -152,4 +152,4 @@ Instruccinoes para ejecutar:
     Prueba en local: 
     cd /home/ayelen/Uni/GitHub/SSDD/p4/CodigoEsqueleto/raft
 
-
+// para encender el servidor de ssh: systemctl start sshd.service

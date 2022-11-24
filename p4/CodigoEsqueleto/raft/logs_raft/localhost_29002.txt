@@ -1,0 +1,415 @@
+localhost_29002 -> 18:31:36.427935 raft.go:179: logger initialized
+localhost_29002 -> 18:31:36.431131 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.431156 raft.go:376: PedirVoto: nos convertimos a seguidor
+localhost_29002 -> 18:31:36.431175 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.431192 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.431205 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.431622 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.431641 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.431660 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.431836 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.431859 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.431880 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.431884 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.431980 raft.go:376: PedirVoto: nos convertimos a seguidor
+localhost_29002 -> 18:31:36.431992 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.432005 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.432018 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.432129 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.432147 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.432161 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.432340 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.432359 raft.go:376: PedirVoto: nos convertimos a seguidor
+localhost_29002 -> 18:31:36.432372 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.432386 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.432404 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.432545 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.432568 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.432582 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.433188 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.433211 raft.go:376: PedirVoto: nos convertimos a seguidor
+localhost_29002 -> 18:31:36.433232 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.433247 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.433261 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.434013 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.434037 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.434052 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.434286 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.434310 raft.go:376: PedirVoto: nos convertimos a seguidor
+localhost_29002 -> 18:31:36.434324 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.434338 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.434351 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.434355 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.434430 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.434444 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.434603 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.434626 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.434641 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.434639 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.434733 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.434746 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.434775 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.434795 raft.go:376: PedirVoto: nos convertimos a seguidor
+localhost_29002 -> 18:31:36.434809 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.434831 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.434845 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.434938 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.434957 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.434970 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.435073 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.435093 raft.go:376: PedirVoto: nos convertimos a seguidor
+localhost_29002 -> 18:31:36.435106 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.435119 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.435136 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.435192 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.435213 raft.go:376: PedirVoto: nos convertimos a seguidor
+localhost_29002 -> 18:31:36.435225 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.435238 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.435250 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.435760 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.435776 raft.go:376: PedirVoto: nos convertimos a seguidor
+localhost_29002 -> 18:31:36.435788 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.435801 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.435814 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.435953 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.435974 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.436166 raft.go:370: Me ha llegado una solicitud para que vote a:  0
+localhost_29002 -> 18:31:36.436185 raft.go:387: PedirVoto: voto a  0
+localhost_29002 -> 18:31:36.436195 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.484037 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.484068 raft.go:635: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+localhost_29002 -> 18:31:36.537078 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.586238 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.637998 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.690252 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.738456 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.789134 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.842000 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.892530 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.943127 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:36.993378 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.043686 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.094677 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.147156 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.196269 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.249228 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.299441 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.350337 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.400905 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.450689 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.502717 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.552955 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.605506 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.656456 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.707369 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.756280 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.807648 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.858924 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.908596 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:37.960393 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.010445 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.060344 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.112834 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.163573 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.211941 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.261222 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.313058 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.362922 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.414522 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.466203 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.517612 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.567485 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.617851 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.668160 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.719405 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.771402 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.819591 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.869836 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.919940 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:38.972677 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.023880 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.073516 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.124979 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.173572 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.224523 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.275249 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.325697 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.376576 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.427697 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.479076 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.529210 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.579417 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.629153 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.680425 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.730622 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.780639 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.831650 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.882680 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.933208 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:39.983898 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.034841 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.086147 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.137137 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.187802 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.239022 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.290033 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.340682 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.391502 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.442934 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.492740 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.545378 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.595548 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.646519 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.696563 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.747758 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.798183 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.848606 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.898782 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:40.950264 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.000280 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.052548 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.101615 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.152722 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.202678 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.254183 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.304166 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.355084 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.406038 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.457856 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.509032 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.560107 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.610907 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.661689 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.712792 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.762984 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.813991 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.865152 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.914238 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:41.965249 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.015815 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.066400 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.117244 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.168089 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.218629 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.269411 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.319893 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.370352 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.421114 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.470481 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.523576 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.571588 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.622385 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.673072 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.722656 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.773104 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.824485 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.874061 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.925566 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:42.976890 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.028163 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.077361 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.129790 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.180677 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.229747 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.280055 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.331224 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.384874 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.432231 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.483848 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.533582 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.587035 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.637111 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.689379 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.737567 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.793412 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.840730 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.891227 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.942089 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:43.992529 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.046110 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.096474 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.144229 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.199917 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.250460 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.301945 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.353148 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.400829 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.455783 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.503119 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.553095 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.607135 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.658549 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.706160 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.759573 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.807446 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.859421 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.909822 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:44.958866 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.010366 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.060189 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.110016 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.160637 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.212126 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.262805 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.313167 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.364204 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.417680 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.466529 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.515808 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.569471 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.619802 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.670267 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.720051 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.770962 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.824652 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.877615 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.926567 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:45.976837 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.026776 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.077719 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.129217 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.178582 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.228914 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.279184 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.330660 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.382011 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.434348 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.486419 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.537924 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.586706 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.637834 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.689168 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.739471 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.789258 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.841006 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.890493 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.941878 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:46.994068 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.044005 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.094451 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.145517 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.196368 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.247814 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.297742 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.349143 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.400709 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.450902 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.502978 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.552891 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.604087 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.653275 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.705557 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.755417 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.809754 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.860043 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.909592 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:47.960507 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.012934 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.059765 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.113400 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.165688 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.213488 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.264650 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.315678 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.370115 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.418544 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.467751 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.521315 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.568616 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.620978 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.671026 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.722532 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.773515 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.822176 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.874177 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.924791 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:48.975374 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.024957 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.076692 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.127136 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.184922 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.229719 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.280489 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.333898 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.383742 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.432767 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.484948 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.534843 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.583908 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.635395 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.686230 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.736581 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.787078 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.840733 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.891403 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.942676 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:49.994843 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.040472 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.094979 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.144331 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.199513 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.245179 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.298326 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.347455 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.398809 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.450218 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.499674 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.549295 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.601178 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.650573 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  0
+localhost_29002 -> 18:31:50.666479 raft.go:228: Roll:  seguidor  idLider:  0  f:  false  yo:  1
+localhost_29002 -> 18:31:50.671169 raft.go:228: Roll:  seguidor  idLider:  0  f:  false  yo:  1
+localhost_29002 -> 18:31:50.675646 raft.go:228: Roll:  seguidor  idLider:  0  f:  false  yo:  1
+localhost_29002 -> 18:31:50.679025 raft.go:228: Roll:  seguidor  idLider:  0  f:  false  yo:  1
+localhost_29002 -> 18:31:50.681854 raft.go:228: Roll:  seguidor  idLider:  0  f:  false  yo:  1
+localhost_29002 -> 18:31:50.699748 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  [{ 19} { 19} { 19} { 19} { 19}]  LastApplied:  0
+localhost_29002 -> 18:31:50.699791 raft.go:515: AppendEntries: Soy servidor y he modificado mi log:  [{ 0} { 19} { 19} { 19} { 19} { 19}]
+localhost_29002 -> 18:31:50.751038 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  [{ 19} { 19} { 19} { 19}]  LastApplied:  5
+localhost_29002 -> 18:31:50.751103 raft.go:515: AppendEntries: Soy servidor y he modificado mi log:  [{ 0} { 19} { 19} { 19} { 19} { 19}]
+localhost_29002 -> 18:31:50.751131 raft.go:526: AppendEntries: Soy servidor y he comprometido mi entrada  2
+localhost_29002 -> 18:31:50.802822 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  [{ 19} { 19} { 19}]  LastApplied:  5
+localhost_29002 -> 18:31:50.802862 raft.go:515: AppendEntries: Soy servidor y he modificado mi log:  [{ 0} { 19} { 19} { 19} { 19} { 19}]
+localhost_29002 -> 18:31:50.802886 raft.go:526: AppendEntries: Soy servidor y he comprometido mi entrada  3
+localhost_29002 -> 18:31:50.854863 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  [{ 19} { 19}]  LastApplied:  5
+localhost_29002 -> 18:31:50.854968 raft.go:515: AppendEntries: Soy servidor y he modificado mi log:  [{ 0} { 19} { 19} { 19} { 19} { 19}]
+localhost_29002 -> 18:31:50.855017 raft.go:526: AppendEntries: Soy servidor y he comprometido mi entrada  4
+localhost_29002 -> 18:31:50.904263 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  [{ 19}]  LastApplied:  5
+localhost_29002 -> 18:31:50.904356 raft.go:515: AppendEntries: Soy servidor y he modificado mi log:  [{ 0} { 19} { 19} { 19} { 19} { 19}]
+localhost_29002 -> 18:31:50.904396 raft.go:526: AppendEntries: Soy servidor y he comprometido mi entrada  5
+localhost_29002 -> 18:31:50.954084 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.004860 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.055087 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.108262 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.159129 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.208142 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.258311 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.310885 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.362718 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.412115 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.461609 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.513068 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.564727 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.616012 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.664563 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.717055 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.766411 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.819043 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.869517 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.920986 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:51.971011 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.021101 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.074217 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.124898 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.174094 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.223249 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.277459 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.328664 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.375601 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.428464 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.478068 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.527666 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.578469 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.629192 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.679781 raft.go:477: AppendEntries: recibido latido del lider:  0 con mandato 19  y Entries:  []  LastApplied:  5
+localhost_29002 -> 18:31:52.687956 raft.go:202: PARANDO NODO
+localhost_29002 -> 18:31:52.691342 raft.go:202: PARANDO NODO

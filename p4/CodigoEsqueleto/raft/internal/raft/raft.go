@@ -199,7 +199,13 @@ func NuevoNodo(nodos []rpctimeout.HostPort, yo int,
 // Quizas interesante desactivar la salida de depuracion
 // de este nodo
 func (nr *NodoRaft) para() {
-	go func() { time.Sleep(5 * time.Millisecond); os.Exit(0) }()
+	nr.Logger.Println("PARANDO NODO")
+	go func() { time.Sleep(20 * time.Millisecond); os.Exit(0) }()
+}
+
+func (nr *NodoRaft) dormir() {
+	nr.Logger.Println("Matar NODO")
+	go func() { time.Sleep(5 * time.Millisecond) }()
 }
 
 // Devuelve "yo", mandato en curso y si este nodo cree ser lider
@@ -210,11 +216,16 @@ func (nr *NodoRaft) para() {
 // El tercer valor es true si el nodo cree ser el lider
 // Cuarto valor es el lider, es el indice del líder si no es él
 func (nr *NodoRaft) obtenerEstado() (int, int, bool, int) {
+	var yo int
+	var mandato int
+	var esLider bool
+	var idLider int
 	nr.Mux.Lock()
-	var yo int = nr.Yo
-	var mandato int = nr.E.CurrentTerm
-	var esLider bool = (nr.Yo == nr.IdLider)
-	var idLider int = nr.IdLider
+	yo = nr.Yo
+	mandato = nr.E.CurrentTerm
+	esLider = (nr.IdLider == nr.Yo)
+	idLider = nr.IdLider
+	nr.Logger.Println("Roll: ", nr.Roll, " idLider: ", nr.IdLider, " f: ", esLider, " yo: ", nr.Yo)
 	nr.Mux.Unlock()
 
 	return yo, mandato, esLider, idLider
@@ -241,7 +252,10 @@ func (nr *NodoRaft) someterOperacion(operacion TipoOperacion) (int, int,
 	nr.Mux.Lock()
 	indice := nr.E.LastApplied
 	mandato := nr.E.CurrentTerm
-	EsLider := (nr.Yo == nr.IdLider)
+	EsLider := false
+	if nr.Roll == LIDER {
+		EsLider = true
+	}
 	idLider := nr.IdLider
 	valorADevolver := ""
 
@@ -266,6 +280,11 @@ func (nr *NodoRaft) ParaNodo(args Vacio, reply *Vacio) error {
 	return nil
 }
 
+func (nr *NodoRaft) DormirNodo(args Vacio, reply *Vacio) error {
+	defer nr.dormir()
+	return nil
+}
+
 type EstadoParcial struct {
 	Mandato int
 	EsLider bool
@@ -278,7 +297,6 @@ type EstadoRemoto struct {
 }
 
 func (nr *NodoRaft) ObtenerEstadoNodo(args Vacio, reply *EstadoRemoto) error {
-	fmt.Println("Hemos llegadoa a la funcion ObtenerEstadoNodo")
 	reply.IdNodo, reply.Mandato, reply.EsLider, reply.IdLider = nr.obtenerEstado()
 	return nil
 }
@@ -301,17 +319,19 @@ type EntradasComprometidas struct {
 	Mandato       int
 }
 
-func (nr *NodoRaft) NumEntradasComprometidas(args Vacio, reply *EntradasComprometidas) {
+func (nr *NodoRaft) NumEntradasComprometidas(args Vacio, reply *EntradasComprometidas) error {
 	reply.Comprometidas = nr.E.CommitIndex
 	reply.Mandato = nr.E.CurrentTerm
+	return nil
 }
 
 type EntradasSinComprometer struct {
 	SinComprometer int
 }
 
-func (nr *NodoRaft) NumEntradasSinComprometer(args Vacio, reply *EntradasSinComprometer) {
-	reply.SinComprometer = len(nr.E.Log) - nr.E.CommitIndex
+func (nr *NodoRaft) NumEntradasSinComprometer(args Vacio, reply *EntradasSinComprometer) error {
+	reply.SinComprometer = len(nr.E.Log) - nr.E.CommitIndex - 1
+	return nil
 }
 
 // ------------------------------- funciones pedirVoto -------------------------------------------------//
@@ -683,6 +703,8 @@ func (nr *NodoRaft) mandarSpamVoto(nodo int, args *ArgsPeticionVoto,
 // ------------------------------- funcion gestion general --------------------------------------------//
 
 func (nr *NodoRaft) Gestion() {
+	time.Sleep(2000 * time.Millisecond)
+
 	for {
 		select {
 		case <-nr.TimerEleccion.C:

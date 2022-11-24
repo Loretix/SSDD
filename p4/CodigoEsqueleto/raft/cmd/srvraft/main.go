@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net"
 	"net/rpc"
 	"os"
@@ -9,24 +8,23 @@ import (
 	"raft/internal/comun/rpctimeout"
 	"raft/internal/raft"
 	"strconv"
-	"strings"
-	"time"
 )
 
 type NodoLE struct {
 	Nr *raft.NodoRaft
 }
 
-func (nodo *NodoLE) LecEsc(args *raft.TipoOperacion, reply *raft.ResultadoRemoto) error {
-	if nodo.Nr.Roll == raft.LIDER {
-		fmt.Println("Estoy en LecEsc")
-		reply.ValorADevolver = args.Valor
-		nodo.Nr.SometerOperacionRaft(*args, reply)
-		return nil
+/*
+	func (nodo *NodoLE) LecEsc(args *raft.TipoOperacion, reply *raft.ResultadoRemoto) error {
+		if nodo.Nr.Roll == raft.LIDER {
+			fmt.Println("Estoy en LecEsc")
+			reply.ValorADevolver = args.Valor
+			nodo.Nr.SometerOperacionRaft(*args, reply)
+			return nil
+		}
+		err := fmt.Errorf("No es lider\n")
+		return err
 	}
-	err := fmt.Errorf("No es lider\n")
-	return err
-}
 
 func conexionCliente(nodo *NodoLE, me int, ip string) {
 
@@ -43,7 +41,7 @@ func conexionCliente(nodo *NodoLE, me int, ip string) {
 	time.Sleep(100 * time.Millisecond)
 
 }
-
+*/
 func main() {
 	nodo := new(NodoLE)
 	// obtener entero de indice de este nodo
@@ -59,10 +57,10 @@ func main() {
 	nodo.Nr = raft.NuevoNodo(nodos, me, make(chan raft.AplicaOperacion, 1000))
 	rpc.Register(nodo.Nr)
 
-	fmt.Println("Replica escucha en :", me, " de ", os.Args[2:])
+	//fmt.Println("Replica escucha en :", me, " de ", os.Args[2:])
 
 	l, err := net.Listen("tcp", os.Args[2:][me])
 	check.CheckError(err, "Main listen error:")
-	go conexionCliente(nodo, me, os.Args[2+me])
+	//go conexionCliente(nodo, me, os.Args[2+me])
 	rpc.Accept(l)
 }
