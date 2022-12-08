@@ -13,37 +13,7 @@ spec:
   ports:
   - port: 6000
 ---
-# Puesta en marcha de PRIMER Pod para Servidor "s1" del servicio "prueba"
-apiVersion: v1
-kind: Pod
-metadata:
-    # Nombre del Pod
-  name: s1
-  labels:
-    app: prueba
-spec:
-  hostname: s1
-  subdomain: prueba
-  dnsPolicy: ClusterFirst
-  # Deshabilitar la tolerancia a fallos en la ejecución del POD
-  restartPolicy: Never  # no nos interesa la tolerancia a fallos para estos
-  containers:
-  - name: servidor
-    image: localhost:5001/servidor:latest
-    env:
-    - name: MIDOMINIODNS
-      value: prueba.default.svc.cluster.local
-    - name: MINOMBREPOD
-      valueFrom:
-        fieldRef:
-          fieldPath: metadata.name
-    command:
-    - /servidor
-    - $(MINOMBREPOD).$(MIDOMINIODNS):6000
-    ports:
-    - containerPort: 6000
----
-# Puesta en marcha de SEGUNDO Pod para cliente 1 interactivo
+# Puesta en marcha de TERCER Pod para cliente 2 automatico
 apiVersion: v1
 kind: Pod
 metadata:
@@ -51,32 +21,14 @@ metadata:
 spec:
   restartPolicy: Never
   containers:
-  - name: cliente
-    image: localhost:5001/cliente:latest
-    command:
-    - sleep
-    - "3600"
-    ports:
-    - containerPort: 7000
----
-# Puesta en marcha de TERCER Pod para cliente 2 automatico
-apiVersion: v1
-kind: Pod
-metadata:
-  name: c2
-spec:
-  restartPolicy: Never
-  containers:
-  - name: cliente
-    image: localhost:5001/cliente:latest
-    env:
-    - name: MIPODIP
-      valueFrom:
-        fieldRef:
-          fieldPath: status.podIP
-    command:
-    - cliente
-    - $(MIPODIP):7000
-    - "s1.prueba.default.svc.cluster.local:6000"
-    ports:
-    - containerPort: 7000
+    - name: cliente
+      image: localhost:5001/cliente:latest
+      env:
+      - name: MIPODIP
+        valueFrom:
+          fieldRef:
+            fieldPath: status.podIP
+      command:
+      - cliente
+      ports:
+      - containerPort: 7000

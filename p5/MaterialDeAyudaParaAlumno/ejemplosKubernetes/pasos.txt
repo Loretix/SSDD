@@ -1,0 +1,99 @@
+--------------------PUESTA EN MARCHA DE KUBERNETES--------------------------------------
+
+scp a799301@central.cps.unizar.es:/misc/usuarios/unai/SistDist/kind .
+scp a799301@central.cps.unizar.es:/misc/usuarios/unai/SistDist/kubectl .
+chmod +x ./kind
+chmod +x ./kubectl
+sudo mv ./kind /usr/local/bin/kind
+sudo mv ./kubectl /usr/local/bin/kubectl
+
+- Añadir al final de fichero .bashrc (nano $HOME/.bashrc)
+	export PATH=$PATH:/usr/local/bin/kind
+	export PATH=$PATH:/usr/local/bin/kubectl
+
+--------------------CREACIÓN DEL CLUSTER--------------------------------------
+- Lanzar el cluster de kubernetes
+	./kind-with-registry.sh
+- ELiminar el cluster de kubernetes 
+	kind delete cluster
+
+--------------------EJECUCION APLICACION GOLANG EN KUBERNETES--------------------------------------
+- Modificación de test.go para adaptarlo a kubernetes (sin ssh)
+- Creación del compilable para cliente y servidor:
+	cd home/ayelen/GitHub/SSDD/p5/MaterialDeAyudaParaAlumno/ejemplosKubernetes/raft/internal/testintegracionraft1
+	CGO_ENABLED=0 go build -o cliente ./main.go 
+	cd $HOME/GitHub/SSDD/p5/MaterialDeAyudaParaAlumno/ejemplosKubernetes/raft/cmd/srvraft
+	CGO_ENABLED=0 go build -o servidor ./main.go
+- Situar los compilables en la carpeta de Dockerfiles
+	mv cliente $HOME/GitHub/SSDD/p5/MaterialDeAyudaParaAlumno/ejemplosKubernetes/Dockerfiles/cliente
+	mv servidor $HOME/GitHub/SSDD/p5/MaterialDeAyudaParaAlumno/ejemplosKubernetes/Dockerfiles/servidor
+- Creación de contenedores y subida de la imagen para cliente y servidor:
+	Desde Dockerfiles/cliente, ejecutar ./Docker-Cliente.sh
+	docker build . -t localhost:5001/cliente:latest
+	docker push localhost:5001/cliente:latest
+
+	Desde Dockerfiles/servidor, ejecutar ./Docker-Servidor.sh
+	docker build . -t localhost:5001/servidor:latest
+	docker push localhost:5001/servidor:latest
+- Lanzamiento del controlador Statefulset (creación de los pods NODOS RAFT y su mantenimiento)
+	./go_statefulset.sh (lanza statefulset_go.yaml)
+- Creación del pod del cliente
+	./go_pod.sh (lanza pods_go.yaml ---> modificado para un solo nodo)
+
+Notas: 
+	para ver los pods: kubectl get pods (una vez que se han lanzado con lo de arriba)
+	para sacar las salidas de los logs: kubectl logs ss-0 >> logsSS0.txt
+
+not necesary:
+	> kubectl get pods 
+	> kubectl delete pod NombrePods
+Borrar (ejecutar ./delete.sh)
+	docker rmi localhost:5001/cliente:latest
+	docker rmi localhost:5001/servidor:latest
+	kubectl delete statefulset ss
+	kubectl delete service ss-service
+	kubectl delete pod c1
+	kubectl delete service prueba
+	kind delete cluster
+
+
+kubectl delete statefulset ss & kubectl delete service ss-service &  kubectl delete service prueba & kind delete cluster
+
+Crear: 
+	> ./kind-with-registry.sh
+	// servidores 
+	> cd /home/ayelen/GitHub/SSDD/p5/MaterialDeAyudaParaAlumno/ejemplosKubernetes/raft/cmd/srvraft
+	> ./servidor.sh
+	// clientes
+	> cd /home/ayelen/GitHub/SSDD/p5/MaterialDeAyudaParaAlumno/ejemplosKubernetes/raft/internal/testintegracionraft1
+	> ./cliente.sh
+	----- sin compilar ----
+	> cd /home/ayelen/GitHub/SSDD/p5/MaterialDeAyudaParaAlumno/ejemplosKubernetes/Dockerfiles/servidor
+	> ./Docker-Servidor.sh
+	> cd /home/ayelen/GitHub/SSDD/p5/MaterialDeAyudaParaAlumno/ejemplosKubernetes/Dockerfiles/cliente
+	> ./Docker-Cliente.sh
+	> cd ../..
+	> ./go_statefulset.sh 
+	> ./go_pods.sh 
+	
+	----- para las pruebas -----
+		> ./prueba1.sh en lugar de go_pods.sh 
+		> ./prueba2.sh 
+		./prueba3.sh 
+
+Debug: 
+	kubectl get pods  
+	//------------------------------
+	kubectl logs ss-0 > SS-0.txt&
+	kubectl logs ss-1 > SS-1.txt&
+	kubectl logs ss-2 > SS-2.txt
+	kubectl logs c1 > c1.txt
+
+	para lanzar comandos en los pods
+	kubectl exec nombrePod -- comando a ejecutar 
+
+---- probatinas -----
+ kubectl scale --current-replicas=3 --replicas=1 deployment nginx 
+ kubectl scale --replicas=2 -f statefulset_go.yaml    // te tira nodos hasta que queden 2
+ kubectl scale --replicas=2 --name=ss-0 -f statefulset_go.yaml  
+Fuente: https://www.iteramos.com/pregunta/87988/como-detenerpausar-un-pod-en-kubernetes

@@ -33,19 +33,22 @@ spec:
     spec:
       terminationGracePeriodSeconds: 10
       containers:
-      - name: servidor
-        image: localhost:5001/servidor:latest
-        env:
-        - name: MISUBDOMINIODNS
-          value: ss-service.default.svc.cluster.local
-        - name: MINOMBREPOD		# primera replica r-0, segunda r-1, etc
-          valueFrom:
-            fieldRef:
-              fieldPath: metadata.name
-        command:
-        - /servidor
-        - $(MINOMBREPOD).$(MISUBDOMINIODNS):6000
-        ports:
-        - containerPort: 6000
+        - name: servidor
+          image: localhost:5001/servidor:latest
+          env:
+          - name: MISUBDOMINIODNS
+            value: ss-service.default.svc.cluster.local
+          - name: MINOMBREPOD		# primera replica ss-0, segunda ss-1, etc
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          command:
+          - servidor
+          - $(MINOMBREPOD)  #para lanzar el numero de replica correcta 
+          - ss-0.ss-service.default.svc.cluster.local:6000
+          - ss-1.ss-service.default.svc.cluster.local:6000
+          - ss-2.ss-service.default.svc.cluster.local:6000
+          ports:
+          - containerPort: 6000
 
 

@@ -1,0 +1,118 @@
+LogPrefix:  ss-2.ss-service.default.svc.cluster.local_6000
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:42.797171 raft.go:179: logger initialized
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.798912 raft.go:715: Gestion: Tiempo eleccion TIMEOUT
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.799038 raft.go:718: Gestion: Somos: SEGUIDOR - TimerEleccion ha expirado
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.799099 raft.go:674: ConvertirseEnCandidato: Nos convertimos en CANDIDATO
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.799235 raft.go:726: Gestion: Tiempo latido TIMEOUT
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.799281 raft.go:428: enviarPeticionVoto: procedo a enviar la peticion de voto
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.799303 raft.go:428: enviarPeticionVoto: procedo a enviar la peticion de voto
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.799292 raft.go:428: enviarPeticionVoto: procedo a enviar la peticion de voto
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.802608 raft.go:445: enviarPeticionVoto: recibo voto
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.802631 raft.go:448: enviarPeticionVoto: gano por mayoria 
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.802639 raft.go:650: ConvertirseEnLider: Nos convertimos en LIDER
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.802658 raft.go:622: Latir: Soy LIDER:  2  con mandato  1 y Log [{ 0}]  y empiezo a enviar latidos
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.802680 raft.go:628: Latir: Soy LIDER:  2  con mandato  1 y Log [{ 0}]  y empiezo a enviar latido a: 0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.802696 raft.go:628: Latir: Soy LIDER:  2  con mandato  1 y Log [{ 0}]  y empiezo a enviar latido a: 1
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.802719 raft.go:557: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.804507 raft.go:557: enviarAppendEntries: valor de Entries:  [] con nextIndex:  1
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.806419 raft.go:445: enviarPeticionVoto: recibo voto
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.863551 raft.go:372: Me ha llegado una solicitud para que vote a:  1
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.863568 raft.go:378: PedirVoto: nos convertimos a seguidor
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.863578 raft.go:637: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.863588 raft.go:381: DoyVoto -1 0 0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.863593 raft.go:389: PedirVoto: voto a  1
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.863599 raft.go:637: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.865343 raft.go:479: AppendEntries: recibido latido del lider:  1 con mandato 2  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.869343 raft.go:372: Me ha llegado una solicitud para que vote a:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.869359 raft.go:378: PedirVoto: nos convertimos a seguidor
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.869370 raft.go:637: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.869379 raft.go:381: DoyVoto -1 0 0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.869390 raft.go:389: PedirVoto: voto a  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.869397 raft.go:637: ConvertirseEnSeguidor: Nos convertimos en SEGUIDOR
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:44.870995 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:45.025368 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:45.172283 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:45.325903 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:45.475208 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:45.635879 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:45.776844 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:45.930217 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:46.078359 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:46.232281 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:46.383307 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:46.533198 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:46.688961 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:46.836276 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:46.989675 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:47.135092 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:47.289019 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:47.437605 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:47.596607 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:47.738076 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:47.894960 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:48.041589 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:48.190413 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:48.341432 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:48.498962 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:48.642883 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:48.793671 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:48.944686 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:49.095760 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:49.248700 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:49.397251 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:49.549207 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:49.699699 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:49.853108 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:50.000680 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:50.151640 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:50.310356 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:50.455504 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:50.604071 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:50.754192 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:50.906785 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:51.056010 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:51.207559 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:51.358422 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:51.510552 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:51.661442 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:51.810285 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:51.964606 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:52.112878 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:52.263117 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:52.412495 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:52.565101 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:52.715265 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:52.866896 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:53.016307 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:53.166567 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:53.316614 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:53.469475 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:53.619068 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:53.768467 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:53.923032 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:54.071640 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:54.222023 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:54.372694 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:54.525667 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:54.674129 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:54.824560 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:54.975020 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:55.125602 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:55.276480 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:55.428239 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:55.577165 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:55.728392 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:55.879366 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:56.029394 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:56.180258 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:56.330789 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:56.481159 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:56.635379 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:56.782672 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:56.933351 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:57.085772 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:57.236297 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:57.393565 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:57.540731 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:57.688118 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
+ss-2.ss-service.default.svc.cluster.local_6000 -->> 20:26:57.843828 raft.go:479: AppendEntries: recibido latido del lider:  0 con mandato 3  y Entries:  []  LastApplied:  0
